@@ -24,7 +24,7 @@
       "tsconfig.json",
       "lerna.json",
       ".prettierrc.js",
-      ".eslintrc",
+      "eslint.config.js",
       "**/*.mdx"
     ],
     "action": "updateLabel",
