@@ -333,7 +333,7 @@ shellcheck: $(SH_FILES) ## Run checks for shell scripts.
 
 ##@ Docker
 
-TAG_SUFFIX=$(if $(WIRE_TAGS)!=oss,-$(WIRE_TAGS))
+TAG_PREFIX=$(if $(registry),$(registry)/grabss/grafana,grabss/grafana)
 PLATFORM=linux/amd64
 
 .PHONY: build-docker-full
@@ -347,7 +347,7 @@ build-docker-full: ## Build Docker image for development.
 	--build-arg WIRE_TAGS=$(WIRE_TAGS) \
 	--build-arg COMMIT_SHA=$$(git rev-parse HEAD) \
 	--build-arg BUILD_BRANCH=$$(git rev-parse --abbrev-ref HEAD) \
-	--tag ghcr.io/grabss/grafana:latest \
+	--tag $(TAG_PREFIX):latest \
 	$(DOCKER_BUILD_ARGS)
 
 .PHONY: build-docker-full-ubuntu
@@ -363,7 +363,7 @@ build-docker-full-ubuntu: ## Build Docker image based on Ubuntu for development.
 	--build-arg BUILD_BRANCH=$$(git rev-parse --abbrev-ref HEAD) \
 	--build-arg BASE_IMAGE=ubuntu:22.04 \
 	--build-arg GO_IMAGE=golang:$(GO_VERSION) \
-	--tag grafana/grafana$(TAG_SUFFIX):dev-ubuntu \
+	--tag $(TAG_PREFIX):latest-ubuntu \
 	$(DOCKER_BUILD_ARGS)
 
 ##@ Services

@@ -21,7 +21,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build Docker Image
-        run: make build-docker-full
+        run: make build-docker-full registry=ghcr.io
 
       - name: Push Docker Image
         run: docker push ghcr.io/grabss/grafana:latest
