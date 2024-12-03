@@ -22,7 +22,7 @@ jobs:
 
       - name: Set up tag version
         id: version
-        run: echo "VERSION=${{ github.ref_name#v }}" >> $GITHUB_ENV
+        run: echo "VERSION=${{ github.ref#v }}" >> $GITHUB_ENV
 
       - name: Build Docker Image
         run: make build-docker-full registry=ghcr.io version=${{ env.VERSION }}
