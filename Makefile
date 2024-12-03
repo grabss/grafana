@@ -348,6 +348,7 @@ build-docker-full: ## Build Docker image for development.
 	--build-arg COMMIT_SHA=$$(git rev-parse HEAD) \
 	--build-arg BUILD_BRANCH=$$(git rev-parse --abbrev-ref HEAD) \
 	--tag $(TAG_PREFIX):latest \
+	$(if $(version),--tag $(TAG_PREFIX):$(version)) \
 	$(DOCKER_BUILD_ARGS)
 
 .PHONY: build-docker-full-ubuntu
@@ -364,6 +365,7 @@ build-docker-full-ubuntu: ## Build Docker image based on Ubuntu for development.
 	--build-arg BASE_IMAGE=ubuntu:22.04 \
 	--build-arg GO_IMAGE=golang:$(GO_VERSION) \
 	--tag $(TAG_PREFIX):latest-ubuntu \
+	$(if $(version),--tag $(TAG_PREFIX):$(version)-ubuntu) \
 	$(DOCKER_BUILD_ARGS)
 
 ##@ Services
