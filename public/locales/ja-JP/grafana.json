@@ -245,6 +245,7 @@
       "edit": "編集",
       "export": "輸出",
       "export-all": "すべてエクスポート",
+      "loading": "読み込み中...",
       "view": "ビュー"
     },
     "contact-points": {
@@ -326,6 +327,14 @@
     "mute-timings": {
       "save": "ミュートタイミングの保存",
       "saving": "ミュートタイミングの保存"
+    },
+    "notification-preview": {
+      "alertmanager": "アラートマネージャー:",
+      "error": "{{alertmanager}} のルーティング プレビューを読み込めませんでした",
+      "initialized": "追加されたラベルに基づいて、アラート インスタンスは次の通知ポリシーにルーティングされます。詳細を表示するには、以下の各通知ポリシーを展開してください。",
+      "preview-routing": "ルーティングのプレビュー",
+      "title": "アラート インスタンス ルーティングのプレビュー",
+      "uninitialized": "フォルダーを選択し、クエリとラベルを設定したら、[ルーティングのプレビュー] をクリックして結果をここで確認します。"
     },
     "policies": {
       "default-policy": {
@@ -3206,9 +3215,7 @@
       "or-view-bookmarks": "またはブックマークを表示する"
     },
     "card": {
-      "data-source": "データソース: ",
-      "date-created": "作成日: ",
-      "metric": "メトリック："
+      "date-created": "作成日: "
     },
     "home": {
       "learn-more": "もっと詳しく知る",
@@ -3315,6 +3322,12 @@
       "info-box-content": "変数を使用すると、よりインタラクティブで動的なダッシュボードが可能になります。",
       "info-box-content-2": "をチェックしてください <2>テンプレートと変数のドキュメント</2> 詳細については。",
       "title": "まだ変数は追加されていません"
+    },
+    "unknown-table": {
+      "loading": "読み込み中...",
+      "no-unknowns": "名前が変更された変数や欠落した変数は見つかりませんでした。",
+      "renamed-or-missing-variables": "名前が変更されたか、または変数がありません",
+      "variable": "変数"
     }
   }
 }
