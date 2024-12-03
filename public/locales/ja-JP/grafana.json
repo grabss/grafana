@@ -1,0 +1,3320 @@
+{
+  "_comment": "",
+  "access-control": {
+    "add-permission": {
+      "role-label": "役割",
+      "serviceaccount-label": "サービス アカウント",
+      "team-label": "チーム",
+      "title": "権限の追加",
+      "user-label": "ユーザー"
+    },
+    "add-permissions": {
+      "save": "保存"
+    },
+    "permission-list": {
+      "permission": "権限"
+    },
+    "permission-list-item": {
+      "inherited": "フォルダから継承"
+    },
+    "permissions": {
+      "add-label": "権限の追加",
+      "no-permissions": "権限がありません",
+      "permissions-change-warning": "これにより、このフォルダとそのすべての子孫の権限が変更されます。合計すると、影響:",
+      "role": "役割",
+      "serviceaccount": "サービス アカウント",
+      "team": "チーム",
+      "title": "権限",
+      "user": "ユーザー"
+    }
+  },
+  "action-editor": {
+    "modal": {
+      "cancel-button": "キャンセル",
+      "save-button": "保存"
+    }
+  },
+  "actions-editor": {
+    "inline": {
+      "add-button": "アクションの追加",
+      "one-click-link": "ワンクリック リンク"
+    }
+  },
+  "admin": {
+    "anon-users": {
+      "not-found": "匿名ユーザーが見つかりません。"
+    },
+    "edit-org": {
+      "access-denied": "この組織のユーザーを表示する権限がありません。この組織を更新するには、サーバー管理者に問い合わせてください。",
+      "heading": "組織の編集",
+      "update-button": "更新",
+      "users-heading": "組織のユーザー"
+    },
+    "feature-toggles": {
+      "sub-title": "機能トグルを表示および編集します。機能トグルの詳細については、<2>grafana.com</2> を参照してください。"
+    },
+    "get-enterprise": {
+      "contact-us": "お問い合わせいただき、無料トライアルをご利用ください",
+      "description": "トライアル版は 30 日間無料でご利用いただけます。トライアル期間終了の 5 日前にお知らせします。",
+      "features-heading": "強化された機能",
+      "included-description": "補償、将来の優先順位付けに関する Grafana Labs との連携、コア Grafana チームによるトレーニング。",
+      "included-heading": "以下も含まれます:",
+      "service-title": "ご対応いたします",
+      "team-sync-details": "LDAP、GitHub OAuth、Auth Proxy、Okta",
+      "title": "Grafana Enterprise を入手"
+    },
+    "ldap": {
+      "test-mapping-heading": "ユーザー マッピングのテスト",
+      "test-mapping-run-button": "実行"
+    },
+    "ldap-permissions": {
+      "active": "<0></0> アクティブ",
+      "admin": "<0></0> はい",
+      "inactive": "<0></0> 非アクティブ"
+    },
+    "ldap-status": {
+      "title": "LDAP 接続"
+    },
+    "ldap-sync": {
+      "debug-button": "LDAP マッピングのデバッグ",
+      "external-sync-description": "ユーザーは LDAP 経由で同期されました。一部の変更は、LDAP またはマッピングで行う必要があります。",
+      "external-sync-label": "外部同期",
+      "next-sync-label": "次にスケジュールされた同期",
+      "not-enabled": "有効になっていません",
+      "sync-button": "ユーザーの同期",
+      "title": "LDAP 同期"
+    },
+    "ldap-sync-info": {
+      "title": "LDAP 同期"
+    },
+    "ldap-user-groups": {
+      "no-org-found": "一致するものがありません <2><0></0></2>"
+    },
+    "ldap-user-info": {
+      "no-team": "LDAP 経由でチームが見つかりません"
+    },
+    "org-uers": {
+      "last-seen-never": "なし"
+    },
+    "org-users": {
+      "not-editable": "このユーザーの役割は、認証プロバイダーから同期されているため編集できません。詳細については、<1>Grafana 認証ドキュメント</1>を参照してください。"
+    },
+    "orgs": {
+      "delete-body": "'{{deleteOrgName}}' を削除してもよろしいですか?<3></3> <5>この組織のダッシュボードはすべて削除されます!</5>",
+      "id-header": "ID",
+      "name-header": "名前",
+      "new-org-button": "新しい組織"
+    },
+    "server-settings": {
+      "alerts-button": "アラートの管理",
+      "dashboards-button": "ダッシュボードの管理",
+      "data-sources-button": "データソースの管理",
+      "not-found": "統計が見つかりません。",
+      "title": "インスタンスの統計",
+      "users-button": "ユーザーの管理"
+    },
+    "settings": {
+      "info-description": "これらのシステム設定は、grafana.ini または custom.ini で定義されています (または ENV 変数で上書きされています)。これらを変更するには、現在再起動する必要がありますGrafana."
+    },
+    "upgrade-info": {
+      "title": "エンタープライズ ライセンス"
+    },
+    "user-orgs": {
+      "add-button": "ユーザーを組織に追加",
+      "change-role-button": "ロールを変更",
+      "external-user-tooltip": "このユーザーの組み込みロールは、認証プロバイダーから同期されているため編集できません。詳細については、<1>Grafana 認証ドキュメント</1>を参照してください。",
+      "remove-button": "組織から削除",
+      "role-not-editable": "このユーザーのロールは、認証プロバイダーから同期されているため編集できません。詳細については、<1>Grafana 認証ドキュメント</1>を参照してください。",
+      "title": "組織"
+    },
+    "user-orgs-modal": {
+      "add-button": "組織に追加",
+      "cancel-button": "キャンセル"
+    },
+    "user-permissions": {
+      "change-button": "変更",
+      "grafana-admin-key": "Grafana Admin",
+      "grafana-admin-no": "いいえ",
+      "grafana-admin-yes": "はい",
+      "title": "権限"
+    },
+    "user-profile": {
+      "delete-button": "ユーザーを削除",
+      "disable-button": "ユーザーを無効にする",
+      "edit-button": "編集",
+      "enable-button": "ユーザーを有効にする",
+      "title": "ユーザー情報"
+    },
+    "user-sessions": {
+      "browser-column": "ブラウザと OS",
+      "force-logout-all-button": "すべてのデバイスから強制的にログアウト",
+      "force-logout-button": "強制的にログアウト",
+      "ip-column": "IP アドレス",
+      "last-seen-column": "最終ログイン",
+      "logged-on-column": "ログオン済み",
+      "title": "セッション"
+    },
+    "users-create": {
+      "create-button": "ユーザーの作成"
+    },
+    "users-list": {
+      "create-button": "新規ユーザー"
+    },
+    "users-table": {
+      "last-seen-never": "なし",
+      "no-licensed-roles": "割り当てられていません"
+    }
+  },
+  "alert-labels": {
+    "button": {
+      "hide": "共通ラベルを非表示",
+      "show": {
+        "tooltip": "共通ラベルを表示"
+      }
+    }
+  },
+  "alerting": {
+    "alert-recording-rule-form": {
+      "evaluation-behaviour": {
+        "description": {
+          "text": "記録ルールの評価方法を定義します。"
+        }
+      }
+    },
+    "alert-rules": {
+      "firing-for": "発火対象",
+      "next-evaluation": "次の評価",
+      "next-evaluation-in": "次の評価",
+      "rule-definition": "ルール定義"
+    },
+    "alertform": {
+      "labels": {
+        "alerting": "検索、サイレント化、または通知ポリシーへのルーティング用にルールにラベルを追加します。",
+        "recording": "ルールにラベルを追加します。"
+      }
+    },
+    "annotations": {
+      "description": "アラート通知にコンテキストを追加します。",
+      "title": "通知メッセージを構成する"
+    },
+    "central-alert-history": {
+      "details": {
+        "error": "このイベントのルールのロード中にエラーが発生しました。",
+        "header": {
+          "alert-rule": "アラートルール",
+          "instance": "実例",
+          "state": "州",
+          "timestamp": "タイムスタンプ"
+        },
+        "loading": "読み込み中...",
+        "no-recognized-state": "認識されない状態",
+        "no-values": "値がありません",
+        "not-found": "このイベントのルールが見つかりません。",
+        "number-transitions": "選択した期間の状態遷移:",
+        "state": {
+          "alerting": "警告中",
+          "error": "エラー",
+          "no-data": "データなし",
+          "normal": "普通",
+          "pending": "保留中"
+        },
+        "state-transitions": "状態遷移",
+        "unknown-event-state": "未知",
+        "unknown-rule": "未知",
+        "value-in-transition": "移行期の価値"
+      },
+      "error": "アラート状態履歴のロード中に問題が発生しました",
+      "filter": {
+        "clear": "フィルターをクリアする",
+        "info": {
+          "label1": "スペースを含まないラベル クエリを使用してイベントをフィルタリングします。例:",
+          "label2": "スペースの無効な使用:",
+          "label3": "スペースの有効な使用:",
+          "label4": "中括弧なしのラベル クエリを使用してアラートをフィルタリングします。例:"
+        }
+      },
+      "filterBy": "フィルタリング条件:",
+      "too-many-events": {
+        "text": "選択した期間には表示できないイベントが多すぎます。",
+        "title": "すべてのイベントを表示できません"
+      }
+    },
+    "common": {
+      "cancel": "キャンセル",
+      "delete": "消去",
+      "edit": "編集",
+      "export": "輸出",
+      "export-all": "すべてエクスポート",
+      "view": "ビュー"
+    },
+    "contact-points": {
+      "create": "連絡先の作成",
+      "custom-template-value": "カスタムテンプレート値",
+      "delete-reasons": {
+        "heading": "次の理由により、連絡先を削除できません。",
+        "no-permissions": "この連絡先を削除するために必要な権限がありません",
+        "policies": "連絡先は 1 つ以上の通知ポリシーによって参照されます",
+        "provisioned": "連絡先はプロビジョニングされているため、UI から削除できません",
+        "rules": "連絡先は 1 つ以上のアラート ルールによって参照されています"
+      },
+      "delivered-to": "に配達されました",
+      "delivery-duration": "前回の配達にかかった時間 <1></1>",
+      "empty-state": {
+        "title": "まだ連絡先がありません"
+      },
+      "last-delivery-attempt": "最後の配信試行",
+      "last-delivery-failed": "最後の配信試行は失敗しました",
+      "no-contact-points-found": "連絡先が見つかりません",
+      "no-delivery-attempts": "配送は試行されません",
+      "no-integrations": "統合が構成されていません",
+      "only-firing": "配達中 <1>発砲のみ</1> 通知",
+      "telegram": {
+        "parse-mode-warning-body": "を使用する場合は、 <1>解析モード</1> 以外のオプション <3>なし</3>、切り詰めると無効なメッセージが生成され、通知が失敗する可能性があります。",
+        "parse-mode-warning-title": "電報メッセージは 4096 UTF-8 文字に制限されています。"
+      },
+      "used-by_other": "使用者 {{ count }} 通知ポリシー",
+      "used-by-rules_other": "使用者 {{ count }} アラートルール"
+    },
+    "contactPointFilter": {
+      "label": "お問い合わせ先"
+    },
+    "export": {
+      "subtitle": {
+        "formats": "形式を選択してファイルをダウンロードするか、内容をクリップボードにコピーします",
+        "one-format": "ファイルをダウンロードするか、内容をクリップボードにコピーします"
+      }
+    },
+    "folderAndGroup": {
+      "evaluation": {
+        "modal": {
+          "text": {
+            "alerting": "このアラート ルールに使用する新しい評価グループを作成します。",
+            "recording": "この記録ルールに使用する新しい評価グループを作成します。"
+          }
+        }
+      }
+    },
+    "list-view": {
+      "empty": {
+        "new-alert-rule": "新しいアラート ルール",
+        "new-recording-rule": "新しい録画ルール",
+        "provisioning": "ファイル プロビジョニングまたは Terraform を通じてルールを定義することもできます。 <2>もっと詳しく知る</2>"
+      },
+      "section": {
+        "dataSourceManaged": {
+          "title": "データソース管理"
+        },
+        "grafanaManaged": {
+          "export-new-rule": "エクスポートルール定義",
+          "export-rules": "エクスポートルール",
+          "loading": "読み込み中...",
+          "new-recording-rule": "新しい録画ルール",
+          "title": "Grafana 管理"
+        }
+      }
+    },
+    "manage-permissions": {
+      "button": "権限の管理",
+      "title": "権限の管理"
+    },
+    "mute_timings": {
+      "error-loading": {
+        "description": "ミュートタイミングをロードできませんでした。",
+        "title": "ミュート タイミングの読み込みエラー"
+      }
+    },
+    "mute-timings": {
+      "save": "ミュートタイミングの保存",
+      "saving": "ミュートタイミングの保存"
+    },
+    "policies": {
+      "default-policy": {
+        "description": "他に一致するポリシーが見つからない場合、すべてのアラート インスタンスはデフォルト ポリシーによって処理されます。",
+        "title": "デフォルトポリシー",
+        "update": "デフォルトのポリシーを更新する"
+      },
+      "delete": {
+        "confirm": "はい、ポリシーを削除します",
+        "warning-1": "この通知ポリシーを削除すると、完全に削除されます。",
+        "warning-2": "このポリシーを削除してもよろしいですか?"
+      },
+      "generated-policies": "自動生成されたポリシー",
+      "matchers": "マッチャー",
+      "metadata": {
+        "active-time": "アクティブな場合",
+        "delivered-to": "に配達されました",
+        "grouped-by": "グループ化",
+        "grouping": {
+          "none": "グループ化していない",
+          "single-group": "単一グループ"
+        },
+        "inherited": "継承された",
+        "mute-time": "ミュート時",
+        "timingOptions": {
+          "groupInterval": {
+            "description": "最初の通知がすでに送信されているアラートのグループに追加された新しいアラートに関する通知を送信するまでの待機時間。",
+            "label": "待って <1></1> 更新情報を送信する前に"
+          },
+          "groupWait": {
+            "description": "アラート インスタンスのグループに通知を送信するまでに最初に待機する時間。",
+            "label": "待って <1></1> インスタンスをグループ化する"
+          },
+          "repeatInterval": {
+            "description": "アラートのグループが最後の通知から変更されていない場合に通知が送信される頻度。",
+            "label": "毎に繰り返される <1></1>"
+          }
+        },
+        "n-instances_other": "実例"
+      },
+      "new-child": "新しい子ポリシー",
+      "new-policy": "新しいポリシーを追加する",
+      "no-matchers": "マッチャーがありません",
+      "reload-policies": "ポリシーのリロード",
+      "save-policy": "ポリシーの保存",
+      "update": {
+        "please-wait": "通知ポリシーを更新するまでお待ちください。",
+        "update-policy": "ポリシーの更新",
+        "updating": "更新中..."
+      },
+      "update-errors": {
+        "conflict": "通知ポリシー ツリーが別のユーザーによって更新されました。",
+        "error-code": "エラーメッセージ: \"{{error}}」",
+        "fallback": "通知ポリシーを更新するときに問題が発生しました。",
+        "suffix": "ページを更新して、もう一度お試しください。",
+        "title": "通知ポリシーの保存中にエラーが発生しました"
+      },
+      "n-more-policies_other": "{{count}} 追加のポリシー"
+    },
+    "provisioning": {
+      "badge-tooltip-provenance": "このリソースは経由でプロビジョニングされました {{provenance}} UI からは編集できません",
+      "badge-tooltip-standard": "このリソースはプロビジョニングされているため、UI から編集できません"
+    },
+    "queryAndExpressionsStep": {
+      "disableAdvancedOptions": {
+        "text": "選択したクエリと式はデフォルトに変換できません。"
+      },
+      "preview": "プレビュー",
+      "previewCondition": "アラート ルールの条件をプレビューする"
+    },
+    "rule-form": {
+      "evaluation": {
+        "evaluation-group-and-interval": "評価グループと間隔",
+        "group": {
+          "cancel": "キャンセル",
+          "create": "作成する",
+          "interval": "評価間隔"
+        },
+        "group-name": "評価グループ名",
+        "group-text": "選択したグループ内のすべてのルールは次の間隔で評価されます。 {{evaluateEvery}}。",
+        "new-group": "新しい評価グループ",
+        "pause": {
+          "alerting": "オンにすると、このアラート ルールの評価が一時停止されます。",
+          "recording": "オンにすると、この記録ルールの評価が一時停止されます。"
+        },
+        "select-folder-before": "評価グループと評価間隔を設定する前にフォルダーを選択してください"
+      },
+      "evaluation-behaviour": {
+        "description": {
+          "text": "アラート ルールの評価方法を定義します。"
+        },
+        "info-help": {
+          "text": "評価が失敗した場合、またはクエリがデータを返さなかった場合のアラートの動作を定義します。"
+        },
+        "pending-period": "保留期間"
+      },
+      "evaluation-behaviour-description1": "評価グループは、アラートと記録ルールを評価するためのコンテナです。",
+      "evaluation-behaviour-description2": "評価グループは、評価間隔、つまりルールが評価される頻度を定義します。",
+      "evaluation-behaviour-description3": "保留期間は、アラートの発生を開始するまでにしきい値条件が満たされる必要がある時間を指定します。",
+      "evaluation-behaviour-for": {
+        "error-parsing": "期間の解析に失敗しました",
+        "validation": "保留期間は評価間隔以上である必要があります。"
+      },
+      "folder": {
+        "cancel": "キャンセル",
+        "create": "作成する",
+        "create-folder": "アラート ルールを保存する新しいフォルダーを作成します。",
+        "creating-new-folder": "新しいフォルダーの作成",
+        "label": "フォルダ",
+        "name": "フォルダ名",
+        "new-folder": "新しいフォルダー",
+        "new-folder-or": "または"
+      },
+      "folder-and-labels": "フォルダーとラベルのセットを使用してアラート ルールを整理します。",
+      "folders": {
+        "help-info": "フォルダーは、アラート ルールを保存するために使用されます。"
+      },
+      "labels": {
+        "help-info": "ラベルは、アラートを他のすべてのアラートと区別するために使用されます。ラベルは、通知の検索、サイレント、ルーティングに使用できます。"
+      },
+      "pause": {
+        "label": "評価を一時停止する"
+      }
+    },
+    "rule-groups": {
+      "delete": {
+        "success": "ルールグループが正常に削除されました"
+      },
+      "move": {
+        "success": "ルールグループは正常に移動されました"
+      },
+      "rename": {
+        "success": "ルールグループの名前が正常に変更されました"
+      },
+      "update": {
+        "success": "ルールグループが正常に更新されました"
+      }
+    },
+    "rule-list": {
+      "configure-datasource": "設定する",
+      "new-alert-rule": "新しいアラート ルール"
+    },
+    "rule-state": {
+      "creating": "作成",
+      "deleting": "削除中",
+      "paused": "一時停止中",
+      "recording-rule": "記録ルール"
+    },
+    "rule-viewer": {
+      "prometheus-consistency-check": {
+        "alert-message": "アラート ルールが更新されました。",
+        "alert-title": "アップデート中です"
+      }
+    },
+    "rules": {
+      "add-rule": {
+        "success": "ルールが正常に追加されました"
+      },
+      "delete-rule": {
+        "success": "ルールは正常に削除されました"
+      },
+      "pause-rule": {
+        "success": "ルール評価が一時停止されました"
+      },
+      "resume-rule": {
+        "success": "ルール評価が再開されました"
+      },
+      "update-rule": {
+        "success": "ルールが正常に更新されました"
+      }
+    },
+    "search": {
+      "property": {
+        "data-source": "データソース",
+        "evaluation-group": "評価グループ",
+        "labels": "ラベル",
+        "namespace": "フォルダー/ネームスペース",
+        "rule-health": "健康",
+        "rule-name": "アラートルール名",
+        "rule-type": "タイプ",
+        "state": "州"
+      },
+      "save-query": "現在の検索を保存する"
+    },
+    "simpleCondition": {
+      "alertCondition": "アラート条件"
+    },
+    "templates": {
+      "editor": {
+        "add-example": "例を追加",
+        "auto-complete": "一般的なテンプレート コードを自動補完するには、コンテンツ エディターで次のキーワードを入力します。",
+        "goto-docs": "通知テンプレートのドキュメント"
+      },
+      "help": {
+        "intro": "通知テンプレートは、Go テンプレート言語を使用して通知メッセージを作成します。\n\n {{ define \"<NAME>\" }}。\n {{ template \"<NAME>\" }}。\n"
+      },
+      "misconfigured-badge-text": "設定が間違っています",
+      "misconfigured-warning": "このテンプレートの構成が間違っています。",
+      "misconfigured-warning-details": "テンプレートは両方で定義する必要があります。 <1></1> そして <4></4> アラートマネージャー設定のセクション。"
+    },
+    "threshold": {
+      "to": "に"
+    }
+  },
+  "annotations": {
+    "empty-state": {
+      "button-title": "注釈クエリを追加",
+      "info-box-content": "<0>注釈は、イベント データをグラフに統合する方法を提供します。</0>",
+      "info-box-content-2": "チェックアウトしてください <2>注釈のドキュメント</2> 詳細については。",
+      "title": "カスタム アノテーション クエリはまだ追加されていません"
+    }
+  },
+  "api-keys": {
+    "empty-state": {
+      "message": "API キーが見つかりません"
+    }
+  },
+  "app-chrome": {
+    "skip-content-button": "メインコンテンツにスキップ",
+    "top-bar": {
+      "sign-in": "サインイン"
+    }
+  },
+  "app-notification": {
+    "item": {
+      "trace-id": "トレースID: {{traceId}}"
+    }
+  },
+  "bookmarks-page": {
+    "empty": {
+      "message": "まだブックマークが作成されていないようです",
+      "tip": "ナビゲーション メニューの項目の上にマウスを置き、ブックマーク アイコンをクリックしてここに追加します。"
+    }
+  },
+  "bouncing-loader": {
+    "label": "読み込み中"
+  },
+  "browse-dashboards": {
+    "action": {
+      "cancel-button": "キャンセル",
+      "cannot-move-folders": "フォルダは移動できません",
+      "confirmation-text": "消去",
+      "delete-button": "消去",
+      "delete-modal-invalid-text": "1 つ以上のフォルダーにライブラリ パネルまたはアラート ルールが含まれています。",
+      "delete-modal-invalid-title": "フォルダを削除できません",
+      "delete-modal-restore-dashboards-text": "このアクションにより、選択したフォルダーはすぐに削除されますが、選択したダッシュボードには 30 日以内に削除のマークが付けられます。",
+      "delete-modal-text": "この操作により、次のコンテンツが削除されます。",
+      "delete-modal-title": "消去",
+      "deleting": "削除中...",
+      "manage-permissions-button": "権限の管理",
+      "move-button": "動く",
+      "move-modal-alert": "このアイテムを移動すると、その権限が変更される可能性があります。",
+      "move-modal-field-label": "フォルダ名",
+      "move-modal-text": "このアクションにより、次のコンテンツが移動します。",
+      "move-modal-title": "動く",
+      "moving": "移動中...",
+      "new-folder-name-required-phrase": "フォルダー名は必須です。"
+    },
+    "actions": {
+      "button-to-recently-deleted": "最近削除されました"
+    },
+    "counts": {
+      "alertRule_other": "{{count}} アラートルール",
+      "dashboard_other": "{{count}} ダッシュボード",
+      "folder_other": "{{count}} フォルダ",
+      "libraryPanel_other": "{{count}} ライブラリパネル",
+      "total_other": "{{count}} アイテム"
+    },
+    "dashboards-tree": {
+      "collapse-folder-button": "フォルダを折りたたむ {{title}}",
+      "expand-folder-button": "フォルダを展開する {{title}}",
+      "name-column": "名前",
+      "select-all-header-checkbox": "すべて選択",
+      "select-checkbox": "選択",
+      "tags-column": "タグ"
+    },
+    "empty-state": {
+      "button-title": "ダッシュボードの作成",
+      "pro-tip": "ダッシュボードをフォルダーに追加/移動します。 <2>ダッシュボードを参照する</2>",
+      "title": "まだダッシュボードを作成していません",
+      "title-folder": "このフォルダーにはまだダッシュボードがありません"
+    },
+    "folder-actions-button": {
+      "delete": "消去",
+      "folder-actions": "フォルダーアクション",
+      "manage-permissions": "権限の管理",
+      "move": "動く"
+    },
+    "folder-picker": {
+      "accessible-label": "フォルダーを選択してください: {{ label }} 現在選択されている",
+      "button-label": "フォルダを選択",
+      "clear-selection": "選択をクリア",
+      "empty-message": "フォルダが見つかりません",
+      "error-title": "フォルダーの読み込みエラー",
+      "non-folder-item": "非フォルダー {{itemKind}} {{itemUID}}",
+      "search-placeholder": "フォルダーを検索する",
+      "unknown-error": "不明なエラー"
+    },
+    "hard-delete": {
+      "success": "ダッシュボード {{name}} 削除されました"
+    },
+    "manage-folder-nav": {
+      "alert-rules": "アラートルール",
+      "dashboards": "ダッシュボード",
+      "panels": "パネル"
+    },
+    "new-folder-form": {
+      "cancel-label": "キャンセル",
+      "create-label": "作成する",
+      "name-label": "フォルダ名"
+    },
+    "no-results": {
+      "clear": "検索とフィルターをクリアする",
+      "text": "クエリに対する結果が見つかりませんでした"
+    },
+    "soft-delete": {
+      "success": "ダッシュボード {{name}} 最近削除された場所に移動しました"
+    }
+  },
+  "clipboard-button": {
+    "inline-toast": {
+      "success": "コピーされました"
+    }
+  },
+  "combobox": {
+    "async": {
+      "error": "オプションのロード中にエラーが発生しました。"
+    },
+    "clear": {
+      "title": "クリア値"
+    },
+    "custom-value": {
+      "label": "カスタム値: "
+    },
+    "options": {
+      "no-found": "オプションが見つかりません。"
+    }
+  },
+  "command-palette": {
+    "action": {
+      "change-theme": "テーマを変更...",
+      "dark-theme": "暗い",
+      "light-theme": "ライト"
+    },
+    "empty-state": {
+      "message": "結果が見つかりませんでした"
+    },
+    "search-box": {
+      "placeholder": "検索またはジャンプ..."
+    },
+    "section": {
+      "actions": "アクション",
+      "dashboard-search-results": "ダッシュボード",
+      "folder-search-results": "フォルダー",
+      "pages": "ページ",
+      "preferences": "設定",
+      "recent-dashboards": "最近のダッシュボード"
+    }
+  },
+  "common": {
+    "apply": "適用する",
+    "cancel": "キャンセル",
+    "clear": "クリア",
+    "close": "近い",
+    "collapse": "崩壊",
+    "edit": "編集",
+    "help": "ヘルプ",
+    "locale": {
+      "default": "デフォルト"
+    },
+    "save": "保存",
+    "search": "検索",
+    "view": "ビュー"
+  },
+  "configuration-tracker": {
+    "config-card": {
+      "complete": "完了"
+    }
+  },
+  "connections": {
+    "connect-data": {
+      "category-header-label": "データソース",
+      "empty-message": "クエリに一致する結果は見つかりませんでした",
+      "request-data-source": "新しいデータソースをリクエストする",
+      "roadmap": "ロードマップを見る"
+    },
+    "search": {
+      "placeholder": "すべて検索"
+    }
+  },
+  "correlations": {
+    "add-new": "新規追加",
+    "alert": {
+      "error-message": "相関データの取得中に不明なエラーが発生しました。",
+      "title": "相関データの取得中にエラーが発生しました"
+    },
+    "basic-info-form": {
+      "description-description": "リンクに関する詳細情報を含むオプションの説明",
+      "description-label": "説明",
+      "label-description": "この名前は相関のラベルとして使用されます。",
+      "label-label": "ラベル",
+      "label-placeholder": "例えば",
+      "label-required": "この項目は必須です。",
+      "sub-text": "<0>相関関係を説明するテキストを定義します。</0>",
+      "title": "相関ラベルの定義 (ステップ 1/3)"
+    },
+    "empty-state": {
+      "button-title": "相関関係の追加",
+      "pro-tip": "データソースのプロビジョニングを介して相関関係を定義することもできます",
+      "title": "まだ相関関係を定義していません"
+    },
+    "list": {
+      "delete": "相関関係の削除",
+      "label": "ラベル",
+      "loading": "読み込み中...",
+      "read-only": "読み取り専用",
+      "source": "ソース",
+      "target": "ターゲット"
+    },
+    "navigation-form": {
+      "add-button": "追加",
+      "back-button": "戻る",
+      "next-button": "次",
+      "save-button": "保存"
+    },
+    "page-content": "相関関係を有効にするには、Grafana 構成に追加します。",
+    "page-heading": "相関関係が無効になっています",
+    "query-editor": {
+      "control-rules": "選択したターゲット データ ソースはクエリ エディターをエクスポートする必要があります。",
+      "data-source-text": "最初にターゲット データ ソースを選択してください。",
+      "data-source-title": "データソースが選択されていません",
+      "error-text": "選択したデータ ソースをロードできませんでした。",
+      "error-title": "データソースの読み込みエラー",
+      "loading": "クエリエディタを読み込み中...",
+      "query-description": "リンクをクリックしたときに実行されるクエリを定義します。 <2>変数</2> 特定のフィールド値にアクセスします。",
+      "query-editor-title": "データ ソースはクエリ エディターをエクスポートしません。",
+      "query-label": "クエリ"
+    },
+    "source-form": {
+      "control-required": "この項目は必須です。",
+      "description": "データ ポイントは、ビジュアライゼーションに相関ボタンを表示させるために、フィールドまたは変換出力としてすべての変数に値を提供する必要があります。<1></1>注: すべての変数を以下で明示的に定義する必要があるわけではありません。 <4>ログファイル</4> すべてのキーと値のペアの変数を作成します。",
+      "description-external-pre": "ターゲット URL で次の変数を使用しました。",
+      "description-query-pre": "ターゲット クエリで次の変数を使用しました。",
+      "external-title": "URL を使用するデータ ソースを構成する (ステップ 3/3)",
+      "heading-external": "ターゲット URL で使用される変数",
+      "heading-query": "ターゲットクエリで使用される変数",
+      "query-title": "リンク先のデータソースを設定します。 {{dataSourceName}} (ステップ 3/3)",
+      "results-description": "このフィールドの値の横にリンクが表示されます。",
+      "results-label": "結果フィールド",
+      "results-required": "この項目は必須です。",
+      "source-description": "選択したソース データ ソースからの結果のリンクがパネルに表示されます",
+      "source-label": "ソース",
+      "sub-text": "<0>どのデータ ソースが相関関係を表示するか、またどのデータが以前に定義した変数を置き換えるかを定義します。</0>"
+    },
+    "sub-title": "異なるデータ ソースに存在するデータが相互にどのように関連するかを定義します。 <2>ドキュメント<1></1></2>",
+    "target-form": {
+      "control-rules": "この項目は必須です。",
+      "sub-text": "<0>相関関係が何にリンクするかを定義します。</0>",
+      "target-description-external": "リンクをクリックしたときに開くURLを指定します",
+      "target-description-query": "リンクをクリックしたときにどのデータ ソースがクエリされるかを指定します",
+      "target-label": "ターゲット",
+      "target-type-description": "相関の種類を指定します",
+      "title": "相関のターゲットを設定する (ステップ 2/3)",
+      "type-label": "タイプ"
+    },
+    "trans-details": {
+      "logfmt-description": "logfmt を使用して指定されたフィールドを解析して変数を取得します",
+      "logfmt-label": "ログファイル",
+      "regex-description": "フィールドは正規表現で解析されます。",
+      "regex-expression": "キャプチャ グループを使用してフィールドの一部を抽出します。",
+      "regex-label": "正規表現",
+      "regex-map-values": "キャプチャ グループに名前が付けられていない場合は、変数の名前を定義します。"
+    },
+    "transform": {
+      "add-button": "変換の追加",
+      "heading": "変換",
+      "no-transform": "変換が定義されていません。"
+    },
+    "transform-row": {
+      "expression-label": "表現",
+      "expression-required": "式を定義してください",
+      "expression-tooltip": "正規表現には必須です。",
+      "field-input": "分野",
+      "field-label": "分野",
+      "field-tooltip": "オプション。",
+      "map-value-label": "マップ値",
+      "map-value-tooltip": "オプション。",
+      "remove-button": "取り除く",
+      "remove-tooltip": "変換の削除",
+      "transform-required": "変換タイプを選択してください",
+      "type-label": "タイプ",
+      "type-tooltip": "ソース データに適用される変換のタイプ。"
+    }
+  },
+  "dashboard": {
+    "add-menu": {
+      "import": "ライブラリからインポートする",
+      "paste-panel": "パネルの貼り付け",
+      "row": "行",
+      "visualization": "視覚化"
+    },
+    "alert-rules-drawer": {
+      "redirect-link": "Grafana アラートのリスト",
+      "subtitle": "このダッシュボードに関連するアラート ルール"
+    },
+    "empty": {
+      "add-library-panel-body": "他のダッシュボードと共有するビジュアライゼーションを追加します。",
+      "add-library-panel-button": "ライブラリパネルを追加",
+      "add-library-panel-header": "インポートパネル",
+      "add-visualization-body": "データ ソースを選択し、クエリを実行して、グラフ、統計、表を使用してデータを視覚化するか、リスト、マークダウン、その他のウィジェットを作成します。",
+      "add-visualization-button": "ビジュアライゼーションを追加する",
+      "add-visualization-header": "ビジュアライゼーションを追加して新しいダッシュボードを開始します",
+      "import-a-dashboard-body": "ファイルからダッシュボードをインポートするか、 <1>グラファナ.com</1>。",
+      "import-a-dashboard-header": "ダッシュボードをインポートする",
+      "import-dashboard-button": "ダッシュボードのインポート"
+    },
+    "inspect": {
+      "data-tab": "データ",
+      "error-tab": "エラー",
+      "json-tab": "JSON",
+      "meta-tab": "メタデータ",
+      "query-tab": "クエリ",
+      "stats-tab": "統計",
+      "subtitle": "{{queryCount}} 合計クエリ時間のクエリ {{formatted}}",
+      "title": "検査: {{panelTitle}}"
+    },
+    "inspect-data": {
+      "data-options": "データオプション",
+      "dataframe-aria-label": "データフレームの選択",
+      "dataframe-label": "データフレームを表示",
+      "download-csv": "CSVをダウンロード",
+      "download-excel-description": "Excel で使用するために CSV にヘッダーを追加します",
+      "download-excel-label": "Excel用のダウンロード",
+      "download-logs": "ログをダウンロードする",
+      "download-service": "ダウンロードサービスグラフ",
+      "download-traces": "トレースをダウンロードする",
+      "excel-header": "Excelのヘッダー",
+      "formatted": "フォーマットされたデータ",
+      "formatted-data-description": "テーブル データは、[フィールド] タブと [上書き] タブで定義されたオプションを使用してフォーマットされます。",
+      "formatted-data-label": "フォーマットされたデータ",
+      "panel-transforms": "パネルの変換",
+      "series-to-columns": "時間をかけてつながったシリーズ",
+      "transformation": "時間をかけてつながったシリーズ",
+      "transformations-description": "テーブル データは、パネルの [変換] タブで定義された変換を使用して表示されます。",
+      "transformations-label": "パネル変形を適用する"
+    },
+    "inspect-json": {
+      "dataframe-description": "変換とフィールド構成が適用されていない生データ。 ",
+      "dataframe-label": "データフレーム JSON (クエリから)",
+      "panel-data-description": "パネル視覚化に渡された生のモデル",
+      "panel-data-label": "パネルデータ",
+      "panel-json-description": "すべてがどのように機能するかを構成する、ダッシュボード JSON に保存されたモデル。",
+      "panel-json-label": "パネルJSON",
+      "select-source": "ソースを選択",
+      "unknown": "不明なオブジェクト: {{show}}"
+    },
+    "inspect-meta": {
+      "no-inspector": "メタデータインスペクターなし"
+    },
+    "inspect-stats": {
+      "data-title": "データソースの統計",
+      "data-traceids": "トレースID",
+      "processing-time": "データ処理時間",
+      "queries": "クエリ数",
+      "request-time": "合計リクエスト時間",
+      "rows": "合計行数",
+      "table-title": "統計"
+    },
+    "toolbar": {
+      "add": "追加",
+      "alert-rules": "アラートルール",
+      "mark-favorite": "お気に入りとしてマークする",
+      "open-original": "元のダッシュボードを開く",
+      "playlist-next": "次のダッシュボードに移動",
+      "playlist-previous": "前のダッシュボードに移動",
+      "playlist-stop": "プレイリストを停止する",
+      "refresh": "ダッシュボードを更新する",
+      "save": "ダッシュボードの保存",
+      "settings": "ダッシュボードの設定",
+      "share": "ダッシュボードを共有する",
+      "share-button": "共有",
+      "unmark-favorite": "お気に入りのマークを解除する"
+    },
+    "validation": {
+      "invalid-dashboard-id": "有効な Grafana.com ID が見つかりませんでした",
+      "invalid-json": "無効な JSON",
+      "tags-expected-array": "タグが予期される配列",
+      "tags-expected-strings": "タグは文字列の配列が必要です"
+    }
+  },
+  "dashboard-import": {
+    "file-dropzone": {
+      "primary-text": "ダッシュボードのJSONファイルをアップロードする",
+      "secondary-text": "ここにドラッグ アンド ドロップするか、クリックして参照します"
+    },
+    "form-actions": {
+      "cancel": "キャンセル",
+      "load": "負荷"
+    },
+    "gcom-field": {
+      "label": "一般的なアプリケーションのダッシュボードを検索してインポートします。 <1></1>",
+      "load-button": "負荷",
+      "placeholder": "Grafana.com ダッシュボードの URL または ID",
+      "validation-required": "Grafana ダッシュボードの URL または ID が必要です"
+    },
+    "json-field": {
+      "label": "ダッシュボードの JSON モデル経由でインポートする",
+      "validation-required": "ダッシュボードの JSON モデルが必要です"
+    }
+  },
+  "dashboard-links": {
+    "empty-state": {
+      "button-title": "ダッシュボードリンクを追加",
+      "info-box-content": "ダッシュボード リンクを使用すると、他のダッシュボードや Web サイトへのリンクをダッシュ​​ボード ヘッダーの直下に配置できます。 <2>もっと詳しく知る</2>",
+      "title": "ダッシュボード リンクはまだ追加されていません"
+    }
+  },
+  "dashboard-settings": {
+    "annotations": {
+      "title": "注釈"
+    },
+    "dashboard-delete-button": "ダッシュボードの削除",
+    "delete-modal": {
+      "confirmation-text": "消去",
+      "delete-button": "消去",
+      "title": "消去"
+    },
+    "delete-modal-restore-dashboards-text": "このアクションにより、ダッシュボードは 30 日後に削除されるようにマークされます。",
+    "delete-modal-text": "このダッシュボードを削除しますか?",
+    "general": {
+      "auto-refresh-description": "自動リフレッシュ リストで使用できる自動リフレッシュ間隔を定義します。",
+      "auto-refresh-label": "自動更新",
+      "description-label": "説明",
+      "editable-description": "すべての編集を無効にするには、読み取り専用に設定します。",
+      "editable-label": "編集可能",
+      "folder-label": "フォルダ",
+      "panel-options-graph-tooltip-description": "さまざまなパネルにわたるツールチップとホバーハイライトの動作を制御します。",
+      "panel-options-graph-tooltip-label": "グラフのツールチップ",
+      "panel-options-label": "パネルオプション",
+      "panels-preload-description": "有効にすると、ダッシュボードがロードされるとすぐにすべてのパネルのロードが開始されます。",
+      "panels-preload-label": "プリロードパネル",
+      "tags-label": "タグ",
+      "title": "一般的な",
+      "title-label": "タイトル"
+    },
+    "json-editor": {
+      "save-button": "変更を保存する",
+      "subtitle": "以下の JSON モデルは、ダッシュボードを定義するデータ構造です。",
+      "title": "JSONモデル"
+    },
+    "links": {
+      "title": "リンク"
+    },
+    "permissions": {
+      "title": "権限"
+    },
+    "provisioned-delete-modal": {
+      "confirm-button": "わかりました",
+      "text-1": "このダッシュボードは Grafana プロビジョニングによって管理されており、削除できません。",
+      "text-2": "プロビジョニングの詳細については、grafana のドキュメントを参照してください。 ",
+      "text-3": "ファイルパス: {{provisionedId}}",
+      "text-link": "ドキュメントページに移動",
+      "title": "プロビジョニングされたダッシュボードを削除できません"
+    },
+    "settings": {
+      "title": "設定"
+    },
+    "time-picker": {
+      "hide-time-picker": "タイムピッカーを非表示にする",
+      "now-delay-description": "不完全な可能性がある最近のデータを除外します。",
+      "now-delay-label": "さあ遅らせてください",
+      "refresh-live-dashboards-description": "時間範囲が「現在」を参照するパネルを継続的に再描画します",
+      "refresh-live-dashboards-label": "ライブダッシュボードを更新する",
+      "time-options-label": "時間オプション",
+      "time-zone-label": "タイムゾーン",
+      "week-start-label": "週の始まり"
+    },
+    "variables": {
+      "title": "変数"
+    },
+    "versions": {
+      "title": "バージョン"
+    }
+  },
+  "dashboards": {
+    "panel-edit": {
+      "angular-deprecation-button-open-panel-json": "JSONエディタを開く",
+      "angular-deprecation-description": "Angular パネルのオプションは、JSON エディターを使用してのみ編集できます。",
+      "angular-deprecation-heading": "パネルオプション"
+    },
+    "settings": {
+      "variables": {
+        "dependencies": {
+          "button": "依存関係を表示する",
+          "title": "依存関係"
+        }
+      }
+    }
+  },
+  "data-source-list": {
+    "empty-state": {
+      "button-title": "データソースの追加",
+      "pro-tip": "構成ファイルを通じてデータ ソースを定義することもできます。 <2>もっと詳しく知る</2>",
+      "title": "データソースが定義されていません"
+    }
+  },
+  "data-source-picker": {
+    "add-new-data-source": "新しいデータソースを構成する",
+    "built-in-list": {
+      "description-dashboard": "他のビジュアライゼーションからのクエリ結果を再利用する",
+      "description-grafana": "モックデータを使用してビジュアライゼーションを発見する",
+      "description-mixed": "複数のデータソースを使用する"
+    },
+    "list": {
+      "no-data-source-message": "データソースが見つかりません"
+    },
+    "modal": {
+      "configure-new-data-source": "新しいタブを開いてデータソースを構成します",
+      "input-placeholder": "データソースの選択",
+      "title": "データソースの選択"
+    },
+    "open-advanced-button": "高度なデータ ソース ピッカーを開く"
+  },
+  "data-source-testing-status-page": {
+    "error-more-details-link": "クリック <2>ここ</2> このエラーの詳細については、こちらをご覧ください。",
+    "success-more-details-links": "次に、次の方法でデータの視覚化を開始できます。 <2>ダッシュボードを構築する</2>、または内のデータをクエリすることによって、 <5>ビューを探索する</5>。"
+  },
+  "data-sources": {
+    "datasource-add-button": {
+      "label": "新しいデータソースを追加する"
+    },
+    "empty-state": {
+      "message": "データソースが見つかりません"
+    }
+  },
+  "embed": {
+    "share": {
+      "time-range-description": "現在の相対時間範囲を絶対時間範囲に変更します。",
+      "time-range-label": "ロック時間範囲"
+    }
+  },
+  "empty-list-cta": {
+    "pro-tip": "プロのヒント: {{proTip}}"
+  },
+  "entity-not-found": {
+    "description": "探していますが見つかりません {{lowerCaseEntity}}。 <4>ホーム</4> または、 <7>コミュニティサイト。</7>"
+  },
+  "errors": {
+    "dashboard-settings": {
+      "annotations": {
+        "datasource": "選択したデータ ソースは注釈をサポートしていません。"
+      }
+    }
+  },
+  "explore": {
+    "add-to-dashboard": "ダッシュボードに追加",
+    "logs": {
+      "logs-volume": {
+        "add-filters": "クエリにさらにラベルを追加して、検索を絞り込みます。",
+        "decrease-timerange": "クエリの時間範囲を減らします。",
+        "much-data": "クエリがアクセスしようとしているデータが多すぎます。"
+      },
+      "maximum-pinned-logs": "最大値 {{PINNED_LOGS_LIMIT}} ピン留めされたログに達しました。",
+      "no-logs-found": "ログが見つかりませんでした。",
+      "scan-for-older-logs": "古いログをスキャンする",
+      "stop-scan": "スキャンを停止する"
+    },
+    "query-library": {
+      "add-edit-description": "説明の追加/編集",
+      "cancel": "キャンセル",
+      "default-description": "公共",
+      "delete-query": "クエリの削除",
+      "delete-query-text": "このクエリをクエリ ライブラリから削除しようとしています。",
+      "delete-query-title": "クエリの削除",
+      "private": "プライベート",
+      "public": "公共",
+      "query-deleted": "クエリが削除されました",
+      "query-template-add-error": "このクエリをライブラリに保存しようとしたときにエラーが発生しました",
+      "query-template-added": "クエリがライブラリに正常に保存されました",
+      "query-template-edit-error": "このクエリを編集しようとしたときにエラーが発生しました",
+      "query-template-edited": "クエリテンプレートが正常に編集されました",
+      "save": "保存"
+    },
+    "query-template-modal": {
+      "add-info": "このクエリを保存しようとしています。",
+      "add-title": "クエリをクエリ ライブラリに追加する",
+      "auto-star": "このクエリに自動スターを付けて、クエリ ライブラリのスター付きリストに追加します。",
+      "data-source-name": "データソース名",
+      "description": "説明",
+      "edit-info": "このクエリを編集しようとしています。",
+      "edit-title": "クエリの編集",
+      "query": "クエリ",
+      "visibility": "可視性"
+    },
+    "query-template-modall": {
+      "data-source-type": "データソースの種類"
+    },
+    "rich-history": {
+      "close-tooltip": "クエリ履歴を閉じる",
+      "datasource-a-z": "データソースA～Z",
+      "datasource-z-a": "データソース Z-A",
+      "newest-first": "新しい順",
+      "oldest-first": "古い順",
+      "query-history": "クエリ履歴",
+      "query-library": "クエリライブラリ",
+      "settings": "設定",
+      "starred": "スター付き"
+    },
+    "rich-history-card": {
+      "add-comment-form": "コメントフォームを追加",
+      "add-comment-tooltip": "コメントを追加",
+      "add-to-library": "ライブラリに追加",
+      "cancel": "キャンセル",
+      "confirm-delete": "消去",
+      "copy-query-tooltip": "クエリをクリップボードにコピー",
+      "copy-shortened-link-tooltip": "短縮リンクをクリップボードにコピー",
+      "datasource-icon-label": "データソースアイコン",
+      "datasource-name-label": "データソース名",
+      "datasource-not-exist": "データソースはもう存在しません",
+      "delete-query-confirmation-title": "消去",
+      "delete-query-title": "クエリの削除",
+      "delete-query-tooltip": "クエリの削除",
+      "delete-starred-query-confirmation-text": "スター付きクエリを完全に削除してもよろしいですか?",
+      "edit-comment-tooltip": "コメントの編集",
+      "optional-description": "クエリが実行する内容の説明 (オプション)。",
+      "query-comment-label": "クエリコメント",
+      "query-text-label": "クエリテキスト",
+      "save-comment": "コメントを保存",
+      "star-query-tooltip": "スタークエリ",
+      "unstar-query-tooltip": "クエリのスターを外します",
+      "update-comment-form": "コメントフォームを更新"
+    },
+    "rich-history-container": {
+      "loading": "読み込み中..."
+    },
+    "rich-history-notification": {
+      "query-copied": "クエリがクリップボードにコピーされました",
+      "query-deleted": "クエリが削除されました"
+    },
+    "rich-history-queries-tab": {
+      "displaying-partial-queries": "表示する {{ count }} クエリ",
+      "displaying-queries": "{{ count }} クエリ",
+      "filter-aria-label": "データソースのフィルタークエリ",
+      "filter-history": "フィルタ履歴",
+      "filter-placeholder": "データソースのフィルタークエリ",
+      "history-local": "履歴はブラウザー内でローカルに保存され、他のユーザーと共有されることはありません。",
+      "loading": "読み込み中...",
+      "loading-results": "結果を読み込んでいます...",
+      "search-placeholder": "検索クエリ",
+      "showing-queries": "表示中 {{ shown }} の {{ total }} <0>さらにロードする</0>",
+      "sort-aria-label": "クエリの並べ替え",
+      "sort-placeholder": "クエリの並べ替え基準"
+    },
+    "rich-history-settings-tab": {
+      "alert-info": "Grafana はエントリを次まで保持します {{optionLabel}}.スター付きエントリは削除されません。",
+      "change-default-tab": "デフォルトのアクティブタブを「クエリ履歴」から「スター付き」に変更します。",
+      "clear-history-info": "すべてのクエリ履歴を完全に削除します。",
+      "clear-query-history": "クエリ履歴をクリアする",
+      "clear-query-history-button": "クエリ履歴をクリアする",
+      "delete-confirm": "消去",
+      "delete-confirm-text": "クエリ履歴を完全に削除してもよろしいですか?",
+      "delete-title": "消去",
+      "history-time-span": "履歴の期間",
+      "history-time-span-description": "Grafana がクエリ履歴を保存する期間を選択します。 {{MAX_HISTORY_ITEMS}} エントリが保存されます。",
+      "only-show-active-datasource": "Explore で現在アクティブなデータ ソースのクエリのみを表示します",
+      "query-history-deleted": "クエリ履歴が削除されました",
+      "retention-period": {
+        "1-week": "1週間",
+        "2-days": "2日",
+        "2-weeks": "2週間",
+        "5-days": "5日間"
+      }
+    },
+    "rich-history-starred-tab": {
+      "filter-queries-aria-label": "データソースのフィルタークエリ",
+      "filter-queries-placeholder": "データソースのフィルタークエリ",
+      "loading": "読み込み中...",
+      "loading-results": "結果を読み込んでいます...",
+      "local-history-message": "履歴はブラウザー内でローカルに保存され、他のユーザーと共有されることはありません。",
+      "search-queries-placeholder": "検索クエリ",
+      "showing-queries": "表示中 {{ shown }} の {{ total }} <0>さらにロードする</0>",
+      "sort-queries-aria-label": "クエリの並べ替え",
+      "sort-queries-placeholder": "クエリの並べ替え基準"
+    },
+    "rich-history-utils": {
+      "a-week-ago": "一週間前",
+      "days-ago": "{{num}} 数日前",
+      "default-from": "今から1時間",
+      "default-to": "今",
+      "today": "今日",
+      "two-weeks-ago": "2週間前",
+      "yesterday": "昨日"
+    },
+    "rich-history-utils-notification": {
+      "saving-failed": "豊富な履歴の保存に失敗しました",
+      "update-failed": "豊富な履歴の更新に失敗しました"
+    },
+    "run-query": {
+      "left-pane": "左側のペイン",
+      "right-pane": "右ペイン",
+      "run-query-button": "クエリの実行",
+      "switch-datasource-button": "データソースを切り替えてクエリを実行する"
+    },
+    "secondary-actions": {
+      "query-add-button": "クエリの追加",
+      "query-add-button-aria-label": "クエリの追加",
+      "query-history-button": "クエリ履歴",
+      "query-history-button-aria-label": "クエリ履歴",
+      "query-inspector-button": "クエリインスペクタ",
+      "query-inspector-button-aria-label": "クエリインスペクタ"
+    },
+    "table": {
+      "no-data": "0 シリーズが返されました",
+      "title": "テーブル",
+      "title-with-name": "テーブル - {{name}}"
+    },
+    "toolbar": {
+      "aria-label": "探索ツールバー",
+      "copy-link": "URLをコピー",
+      "copy-link-abs-time": "絶対 URL をコピーする",
+      "copy-links-absolute-category": "時間同期 URL リンク (時間範囲をそのままにして共有)",
+      "copy-links-normal-category": "通常の URL リンク",
+      "copy-shortened-link": "短縮URLをコピーする",
+      "copy-shortened-link-abs-time": "絶対短縮URLをコピーする",
+      "copy-shortened-link-label": "共有",
+      "copy-shortened-link-menu": "コピーリンクのオプションを開く",
+      "refresh-picker-cancel": "キャンセル",
+      "refresh-picker-run": "クエリの実行",
+      "split-close": " 近い ",
+      "split-close-tooltip": "分割ペインを閉じる",
+      "split-narrow": "狭いペイン",
+      "split-title": "スプリット",
+      "split-tooltip": "ペインを分割する",
+      "split-widen": "ペインを広げる"
+    }
+  },
+  "explore-metrics": {
+    "breakdown": {
+      "clearFilter": "クリアフィルター",
+      "labelSelect": "選択",
+      "noMatchingValue": "一致する値が見つかりませんでした。 {{filter}}",
+      "sortBy": "並べ替え"
+    },
+    "related-logs": {
+      "docsLink": "Loki 記録ルール",
+      "openExploreLogs": "探索ログを開く",
+      "relatedLogsUnavailableAfterDocsLink": "または、メトリクスとログの間の接続を確立するためのさまざまな方法を拡張するときに、後でもう一度確認してください。",
+      "relatedLogsUnavailableBeforeDocsLink": "このメトリクスに関連するログは利用できません。 ",
+      "warnExperimentalFeature": "関連ログは実験的な機能です。"
+    },
+    "viewBy": "表示方法"
+  },
+  "export": {
+    "json": {
+      "cancel-button": "キャンセル",
+      "copy-button": "クリップボードにコピー",
+      "download-button": "ファイルをダウンロードする",
+      "download-successful_toast_message": "JSON がダウンロードされました",
+      "export-externally-label": "ダッシュボードをエクスポートして別のインスタンスで使用する",
+      "info-text": "ダッシュボードの JSON を含む JSON ファイルをコピーまたはダウンロードします。",
+      "title": "ダッシュボードの JSON をエクスポートする"
+    },
+    "menu": {
+      "export-as-json-label": "輸出",
+      "export-as-json-tooltip": "輸出"
+    }
+  },
+  "folder-filter": {
+    "clear-folder-button": "クリアフォルダー"
+  },
+  "folder-picker": {
+    "create-instructions": "Enter キーを押して新しいフォルダーを作成します。",
+    "loading": "フォルダーを読み込んでいます..."
+  },
+  "forgot-password": {
+    "back-button": "ログインに戻る",
+    "change-password": {
+      "skip-button": "スキップ",
+      "submit-button": "提出する"
+    },
+    "contact-admin": "ユーザー名またはメールアドレスを忘れましたか? ",
+    "email-sent": "リセットリンクを含むメールがメールアドレスに送信されました。",
+    "reset-password-header": "パスワードをリセットする",
+    "send-email-button": "リセットメールを送信する"
+  },
+  "form-prompt": {
+    "continue-button": "編集を続ける",
+    "description": "加えた変更は保存されない場合があります。",
+    "discard-button": "保存されていない変更を破棄する"
+  },
+  "gen-ai": {
+    "apply-suggestion": "適用する",
+    "incomplete-request-error": "申し訳ありませんが、リクエストを完了できませんでした。",
+    "send-custom-feedback": "送信"
+  },
+  "grafana-ui": {
+    "auto-save-field": {
+      "saved": "保存しました！",
+      "saving": "保存 <1></1>"
+    },
+    "color-picker-popover": {
+      "palette-tab": "色",
+      "spectrum-tab": "カスタム"
+    },
+    "confirm-button": {
+      "cancel": "キャンセル"
+    },
+    "data-link-editor": {
+      "info": "データ リンクを使用すると、シリーズ名、ラベル、値などのデータ変数を参照できます。 "
+    },
+    "data-link-editor-modal": {
+      "cancel": "キャンセル",
+      "save": "保存"
+    },
+    "data-links-inline-editor": {
+      "add-link": "リンクを追加",
+      "one-click-link": "ワンクリックリンク"
+    },
+    "data-source-http-settings": {
+      "access-help": "ヘルプ <1></1>",
+      "access-help-details": "アクセス モードは、データ ソースへのリクエストがどのように処理されるかを制御します。<1> <1>サーバ</1></1> 他に何も記載されていない場合は、この方法を推奨します。",
+      "allowed-cookies": "許可されるCookie",
+      "auth": "認証",
+      "basic-auth": "基本認証の詳細",
+      "browser-mode-description": "すべてのリクエストはブラウザーからデータ ソースに直接行われ、クロスオリジン リソース共有 (CORS) 要件の対象となる場合があります。",
+      "browser-mode-title": "<0>ブラウザのアクセスモード:</0>",
+      "default-url-tooltip": "完全な HTTP URL (例: http://your_server:8080) を指定します。",
+      "direct-url-tooltip": "あなたのアクセス方法は、 <1>ブラウザ</1>、これは、URL がブラウザからアクセスできる必要があることを意味します。",
+      "heading": "HTTP",
+      "proxy-url-tooltip": "あなたのアクセス方法は、 <1>サーバ</1>、これは、URL が grafana バックエンド/サーバーからアクセスできる必要があることを意味します。",
+      "server-mode-description": "すべてのリクエストはブラウザから Grafana バックエンド/サーバーに送信され、次にリクエストがデータ ソースに転送され、クロスオリジン リソース共有 (CORS) 要件が回避されます。",
+      "server-mode-title": "<0>サーバーアクセスモード (デフォルト):</0>"
+    },
+    "data-source-settings": {
+      "alerting-settings-heading": "警告中",
+      "cert-key-reset": "リセット",
+      "custom-headers-add": "ヘッダーの追加",
+      "custom-headers-title": "カスタムHTTPヘッダー",
+      "secure-socks-heading": "セキュアソックスプロキシ",
+      "tls-heading": "TLS/SSL認証の詳細"
+    },
+    "date-time-picker": {
+      "apply": "適用する",
+      "cancel": "キャンセル"
+    },
+    "drawer": {
+      "close": "近い"
+    },
+    "field-link-list": {
+      "external-links-heading": "外部リンク"
+    },
+    "file-dropzone": {
+      "cancel-upload": "アップロードをキャンセルする",
+      "file-too-large": "ファイルが次より大きいです {{size}}"
+    },
+    "filter-input": {
+      "clear": "クリア"
+    },
+    "modal": {
+      "close-tooltip": "近い"
+    },
+    "secret-form-field": {
+      "reset": "リセット"
+    },
+    "segment-async": {
+      "error": "オプションのロードに失敗しました",
+      "loading": "オプションを読み込んでいます...",
+      "no-options": "オプションが見つかりません"
+    },
+    "select": {
+      "default-create-label": "Enter キーを押して追加します",
+      "no-options-label": "オプションが見つかりません",
+      "placeholder": "選ぶ"
+    },
+    "spinner": {
+      "aria-label": "読み込み中"
+    },
+    "table": {
+      "copy": "クリップボードにコピー",
+      "csv-counts": "行:{{rows}}、列:{{columns}}  <5></5>",
+      "filter-popup-apply": "わかりました",
+      "filter-popup-cancel": "キャンセル",
+      "filter-popup-clear": "クリアフィルター",
+      "filter-popup-heading": "値でフィルタリングします。",
+      "no-values-label": "値がありません",
+      "pagination-summary": "{{itemsRangeStart}} - {{displayedEnd}} の {{numRows}} 行"
+    },
+    "tags-input": {
+      "add": "追加"
+    },
+    "user-icon": {
+      "active-text": "最後の 15 分間アクティブ"
+    },
+    "viz-legend": {
+      "right-axis-indicator": "(右の y 軸)"
+    },
+    "viz-tooltip": {
+      "footer-add-annotation": "注釈を追加する"
+    }
+  },
+  "graph": {
+    "container": {
+      "content": "1 つのパネルでレンダリングするシリーズが多すぎると、パフォーマンスに影響し、データが読みにくくなる可能性があります。",
+      "show-all-series": "すべて表示 {{length}}",
+      "show-only-series": "表示のみ {{MAX_NUMBER_OF_TIME_SERIES}} シリーズ",
+      "title": "グラフ"
+    }
+  },
+  "help-modal": {
+    "column-headers": {
+      "description": "説明",
+      "keys": "キー"
+    },
+    "shortcuts-category": {
+      "dashboard": "ダッシュボード",
+      "focused-panel": "集中パネル",
+      "global": "グローバル",
+      "time-range": "時間範囲"
+    },
+    "shortcuts-description": {
+      "change-theme": "テーマの変更",
+      "collapse-all-rows": "すべての行を折りたたむ",
+      "copy-time-range": "時間範囲をコピーする",
+      "dashboard-settings": "ダッシュボードの設定",
+      "duplicate-panel": "パネルの複製",
+      "exit-edit/setting-views": "編集/ビューの設定を終了する",
+      "expand-all-rows": "すべての行を展開",
+      "go-to-dashboards": "ダッシュボードに移動",
+      "go-to-explore": "探索に行く",
+      "go-to-home-dashboard": "ホームダッシュボードに移動",
+      "go-to-profile": "プロフィールに移動",
+      "make-time-range-permanent": "時間範囲を絶対/永続にする",
+      "move-time-range-back": "時間範囲を前に移動します",
+      "move-time-range-forward": "時間範囲を前方に移動します",
+      "open-search": "検索を開く",
+      "open-shared-modal": "オープンパネル共有モーダル",
+      "paste-time-range": "貼り付け時間範囲",
+      "refresh-all-panels": "すべてのパネルを更新する",
+      "remove-panel": "パネルの取り外し",
+      "save-dashboard": "ダッシュボードの保存",
+      "show-all-shortcuts": "すべてのキーボード ショートカットを表示",
+      "toggle-active-mode": "非アクティブ/表示モードを切り替える",
+      "toggle-all-panel-legends": "すべてのパネルの凡例を切り替えます",
+      "toggle-auto-fit": "自動フィットパネルの切り替え (実験的機能)",
+      "toggle-exemplars": "すべてのパネルのサンプルを切り替えます",
+      "toggle-graph-crosshair": "共有グラフ十字線の切り替え",
+      "toggle-kiosk": "キオスクモードを切り替えます（上部のナビゲーションを非表示にします）",
+      "toggle-panel-edit": "パネル編集ビューの切り替え",
+      "toggle-panel-fullscreen": "パネルの全画面表示を切り替えます",
+      "toggle-panel-legend": "パネルの凡例を切り替えます",
+      "zoom-out-time-range": "時間範囲をズームアウトする"
+    },
+    "title": "ショートカット"
+  },
+  "help-wizard": {
+    "download-snapshot": "スナップショットをダウンロードする",
+    "github-comment": "Githubのコメントをコピー",
+    "support-bundle": "また、Grafana インスタンスと設定されたデータソースに関する情報を含むサポート バンドルを取得することもできます。 <1>サポートバンドルセクション</1>。",
+    "troubleshooting-help": "トラブルシューティングのヘルプをリクエストするには、このパネルのスナップショットを Grafana Labs テクニカル サポートに送信してください。"
+  },
+  "inspector": {
+    "query": {
+      "collapse-all": "すべて折りたたむ",
+      "copy-to-clipboard": "クリップボードにコピー",
+      "description": "クエリ インスペクターを使用すると、生のリクエストとレスポンスを表示できます。",
+      "expand-all": "すべて展開",
+      "no-data": "リクエストとレスポンスはまだ収集されていません。",
+      "refresh": "リフレッシュ"
+    }
+  },
+  "ldap-drawer": {
+    "attributes-section": {
+      "description": "ユーザーの名、姓、電子メール アドレスにマップする LDAP 属性を指定して、アプリケーションがユーザー情報を正しく取得して表示できるようにします。",
+      "email-label": "電子メール",
+      "label": "属性",
+      "member-of-label": "のメンバー",
+      "name-label": "名前",
+      "surname-label": "姓",
+      "username-label": "ユーザー名"
+    },
+    "extra-security-section": {
+      "client-cert-label": "クライアント証明書のパス",
+      "client-cert-placeholder": "/path/to/client_cert.pem",
+      "client-cert-value-label": "クライアント証明書の内容",
+      "client-cert-value-placeholder": "Base64 のクライアント証明書の内容",
+      "client-key-label": "クライアントキーのパス",
+      "client-key-placeholder": "/path/to/client_key.pem",
+      "client-key-value-label": "クライアントキーのコンテンツ",
+      "client-key-value-placeholder": "Base64 のクライアントキーの内容",
+      "encryption-provider-base-64": "Base64でエンコードされたコンテンツ",
+      "encryption-provider-description": "X.509 証明書は公開部分を提供し、PKCS#8 形式で発行された秘密キーは非対称暗号化の秘密部分を提供します。",
+      "encryption-provider-file-path": "ファイルへのパス",
+      "encryption-provider-label": "暗号化キーと証明書の提供仕様。",
+      "label": "追加のセキュリティ対策",
+      "min-tls-version-description": "これは、許可される最小の TLS バージョンです。",
+      "min-tls-version-label": "TLS の最小バージョン",
+      "root-ca-cert-label": "ルート CA 証明書のパス",
+      "root-ca-cert-placeholder": "/path/to/root_ca_cert.pem",
+      "root-ca-cert-value-label": "ルート CA 証明書の内容",
+      "root-ca-cert-value-placeholder": "例: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0t",
+      "start-tls-description": "true に設定すると、LDAPS の代わりに STARTTLS で LDAP を使用します。",
+      "start-tls-label": "TLSを開始する",
+      "tls-ciphers-label": "TLS暗号",
+      "tls-ciphers-placeholder": "例: TLS_AES_256_GCM_SHA384",
+      "use-ssl-description": "LDAP サーバーが TLS 接続 (STARTTLS または LDAPS のいずれかを使用) を使用する必要がある場合は true に設定します。",
+      "use-ssl-label": "SSLを使用する",
+      "use-ssl-tooltip": "サポートされている暗号と TLS バージョンの完全なリストについては、以下を参照してください。"
+    },
+    "group-mapping": {
+      "grafana-admin": {
+        "description": "有効にすると、このグループのすべてのユーザーが Grafana 管理者になります",
+        "label": "グラファナ管理者"
+      },
+      "group-dn": {
+        "description": "返された OAuth2 トークンから ID トークンを抽出するために使用されるキーの名前。",
+        "label": "グループDN"
+      },
+      "org-id": {
+        "description": "Grafana 組織データベース ID。",
+        "label": "組織ID"
+      },
+      "org-role": {
+        "label": "組織の役割 *"
+      },
+      "remove": {
+        "button": "グループマッピングを削除する"
+      }
+    },
+    "group-mapping-section": {
+      "add": {
+        "button": "グループマッピングを追加"
+      },
+      "description": "LDAP グループを Grafana 組織ロールにマッピングする",
+      "group-search-base-dns-label": "グループ検索ベースDNS",
+      "group-search-base-dns-placeholder": "例: ou=グループ、dc=example、dc=com",
+      "group-search-filter-description": "ディレクトリ内のグループエントリをフィルタリングして識別するために使用されます",
+      "group-search-filter-label": "グループ検索フィルター",
+      "group-search-filter-user-attribute-description": "フィルタリングの目的でグループエントリ内のユーザーを識別します",
+      "group-search-filter-user-attribute-label": "グループ名属性",
+      "label": "グループマッピング",
+      "skip-org-role-sync-description": "IdP からユーザーの組織ロールを同期しないようにする",
+      "skip-org-role-sync-label": "組織の役割の同期をスキップする"
+    },
+    "misc-section": {
+      "allow-sign-up-descrition": "有効になっていない場合、既存の Grafana ユーザーのみが LDAP を使用してログインできます。",
+      "allow-sign-up-label": "サインアップを許可する",
+      "label": "その他",
+      "port-description": "デフォルトのポートは、SSL なしの場合は 389、SSL ありの場合は 636 です。",
+      "port-label": "ポート",
+      "timeout-description": "LDAP サーバーへの接続のタイムアウト (秒単位)",
+      "timeout-label": "タイムアウト"
+    },
+    "title": "詳細設定"
+  },
+  "ldap-settings-page": {
+    "advanced-settings-section": {
+      "edit-button": "編集",
+      "subtitle": "マッピング、追加のセキュリティ対策など。",
+      "title": "詳細設定"
+    },
+    "alert": {
+      "discard-success": "LDAP設定が破棄されました",
+      "error-fetching": "LDAP設定の取得中にエラーが発生しました",
+      "error-saving": "LDAP設定の保存中にエラーが発生しました",
+      "error-validate-form": "LDAP設定の検証中にエラーが発生しました",
+      "feature-flag-disabled": "このページには、 <1>sso設定LDAP</1> 機能フラグ。",
+      "saved": "LDAP設定が保存されました"
+    },
+    "bind-dn": {
+      "description": "LDAP サーバーへのバインドと認証に使用されるアカウントの識別名。",
+      "label": "バインドDN",
+      "placeholder": "例: cn=admin、dc=grafana、dc=org"
+    },
+    "bind-password": {
+      "label": "バインドパスワード"
+    },
+    "buttons-section": {
+      "disable-button": "無効にする",
+      "discard-button": "破棄",
+      "save-and-enable-button": "保存して有効にする",
+      "save-button": "保存"
+    },
+    "documentation": "ドキュメント",
+    "host": {
+      "description": "接続する LDAP サーバーのホスト名または IP アドレス。",
+      "error": "サーバーホストは必須フィールドです",
+      "label": "サーバーホスト",
+      "placeholder": "例: 127.0.0.1"
+    },
+    "login-form-alert": {
+      "description": "基本ログイン フォームが現在無効になっているため、LDAP 構成が機能していません。 ",
+      "title": "基本ログインが無効になっています"
+    },
+    "search_filter": {
+      "description": "ディレクトリ内の特定のエントリを見つけるために使用される LDAP 検索フィルタ。",
+      "error": "検索フィルターは必須フィールドです",
+      "label": "検索フィルター",
+      "placeholder": "例: cn=%s"
+    },
+    "search-base-dns": {
+      "description": "検索するベース DNS の配列。",
+      "error": "検索ベースDNSは必須フィールドです",
+      "label": "検索ベースDNS",
+      "placeholder": "例: dc=グラファナ、dc=org"
+    },
+    "subtitle": "Grafana の LDAP 統合により、Grafana ユーザーは LDAP 資格情報を使用してログインできるようになります。 <2><0>ドキュメント</0></2>。",
+    "title": "基本設定"
+  },
+  "library-panel": {
+    "add-modal": {
+      "cancel": "キャンセル",
+      "create": "ライブラリパネルの作成",
+      "error": "この名前のライブラリ パネルはすでに存在します",
+      "folder": "フォルダに保存",
+      "folder-description": "ライブラリパネルの権限はフォルダの権限から派生します。",
+      "name": "ライブラリパネル名"
+    },
+    "add-widget": {
+      "title": "パネルライブラリからパネルを追加"
+    },
+    "empty-state": {
+      "message": "まだライブラリ パネルを作成していません",
+      "more-info": "パネルのコンテキスト メニューを使用して、既存のダッシュボード パネルからライブラリ パネルを作成します。 <2>もっと詳しく知る</2>"
+    }
+  },
+  "library-panels": {
+    "empty-state": {
+      "message": "ライブラリパネルが見つかりません"
+    },
+    "loading-panel-text": "ライブラリパネルの読み込み中",
+    "modal": {
+      "button-cancel": "キャンセル",
+      "button-view-panel1": "パネルを表示 {{label}}...",
+      "button-view-panel2": "ダッシュボードのパネルを表示...",
+      "panel-not-linked": "パネルはダッシュボードにリンクされていません。",
+      "select-no-options-message": "ダッシュボードが見つかりません",
+      "select-placeholder": "入力を開始してダッシュボードを検索します",
+      "title": "ダッシュボードのパネルを表示する",
+      "body_other": "このパネルは以下で使用されています {{count}} ダッシュボード。"
+    },
+    "save": {
+      "error": "ライブラリ パネルの保存中にエラーが発生しました: \"{{errorMsg}}」",
+      "success": "ライブラリパネルが保存されました"
+    }
+  },
+  "link": {
+    "share": {
+      "config-alert-description": "設定を更新すると、デフォルトのコピー リンクが変更され、これらの変更が含まれます。",
+      "config-alert-title": "リンク設定",
+      "config-description": "次のカスタマイズ設定を使用して、組織内でダッシュボードを共有するためのパーソナライズされた直接リンクを作成します。",
+      "copy-link-button": "リンクをコピー",
+      "copy-to-clipboard": "リンクがクリップボードにコピーされました",
+      "short-url-label": "リンクを短縮する",
+      "time-range-description": "現在の相対時間範囲を絶対時間範囲に変更します。",
+      "time-range-label": "ロック時間範囲"
+    },
+    "share-panel": {
+      "config-description": "次のカスタマイズ設定を使用して、組織内でパネルを共有するためのパーソナライズされた直接リンクを作成します。",
+      "render-image": "レンダリング画像"
+    }
+  },
+  "login": {
+    "divider": {
+      "connecting-text": "または"
+    },
+    "error": {
+      "blocked": "このユーザーのログイン試行回数を超えました。",
+      "invalid-user-or-password": "無効なユーザー名またはパスワード",
+      "title": "ログインに失敗しました",
+      "unknown": "不明なエラーが発生しました"
+    },
+    "forgot-password": "パスワードをお忘れですか？",
+    "form": {
+      "confirmation-code": "確認コードが必要です",
+      "confirmation-code-label": "確認コード",
+      "confirmation-code-placeholder": "確認コード",
+      "email-label": "電子メール",
+      "email-placeholder": "電子メール",
+      "email-required": "メールアドレスは必須です",
+      "name-label": "名前",
+      "name-placeholder": "名前",
+      "password-label": "パスワード",
+      "password-placeholder": "パスワード",
+      "password-required": "パスワードが必要です",
+      "submit-label": "ログイン",
+      "submit-loading-label": "ログイン中...",
+      "username-label": "メールアドレスまたはユーザー名",
+      "username-placeholder": "メールアドレスまたはユーザー名",
+      "username-required": "メールアドレスまたはユーザー名は必須です",
+      "verify-email-label": "確認メールを送信する",
+      "verify-email-loading-label": "メールを送信中..."
+    },
+    "layout": {
+      "update-password": "パスワードを更新してください"
+    },
+    "services": {
+      "sing-in-with-prefix": "サインインするには {{serviceName}}"
+    },
+    "signup": {
+      "button-label": "サインアップ",
+      "new-to-question": "グラファナを初めて使用しますか?"
+    }
+  },
+  "logs": {
+    "infinite-scroll": {
+      "older-logs": "古いログ"
+    },
+    "log-row-message": {
+      "ellipsis": "… ",
+      "more": "もっと"
+    }
+  },
+  "migrate-to-cloud": {
+    "build-snapshot": {
+      "description": "このツールは、このインストールからクラウド スタックに一部のリソースを移行できます。",
+      "title": "スナップショットが存在しません",
+      "when-complete": "スナップショットが完了すると、クラウド スタックにアップロードできるようになります。"
+    },
+    "building-snapshot": {
+      "description": "このインストールの現在の状態の特定時点のスナップショットを作成しています。",
+      "description-eta": "スナップショットの作成には通常 2 分もかかりません。",
+      "title": "建物の設置スナップショット"
+    },
+    "can-i-move": {
+      "body": "このインストールをクラウド スタックに接続すると、データ ソースとダッシュボードをアップロードできるようになります。",
+      "link-title": "他の設定の移行について学ぶ",
+      "title": "このインストールを Grafana Cloud に移動できますか?"
+    },
+    "connect-modal": {
+      "body-cloud-stack": "クラウド スタックも必要です。",
+      "body-get-started": "始めるには、Grafana.com アカウントが必要です。",
+      "body-sign-up": "Grafana.com アカウントにサインアップする",
+      "body-token": "自己管理型 Grafana インストールには、コンテンツを安全に移行するための特別なアクセスが必要です。",
+      "body-token-field": "移行トークン",
+      "body-token-field-placeholder": "ここにトークンを貼り付けます",
+      "body-token-instructions": "クラウド スタックにログインし、[管理]、[一般]、[Grafana Cloud への移行] の順に移動します。",
+      "body-view-stacks": "クラウド スタックを表示する",
+      "cancel": "キャンセル",
+      "connect": "このスタックに接続します",
+      "connecting": "このスタックに接続しています...",
+      "title": "クラウドスタックに接続する",
+      "token-error-title": "トークンの保存中にエラーが発生しました",
+      "token-errors": {
+        "instance-request-error": "クラウド インスタンスの接続を確認しようとしたときにエラーが発生しました。",
+        "instance-unreachable": "クラウド インスタンスにアクセスできません。",
+        "migration-disabled": "このインスタンスではクラウド移行が無効になっています。",
+        "session-creation-failure": "移行の作成中にエラーが発生しました。",
+        "token-invalid": "トークンが無効です。",
+        "token-not-saved": "トークンの保存中にエラーが発生しました。",
+        "token-request-error": "トークンの検証中にエラーが発生しました。 ",
+        "token-validation-failure": "トークンが無効です。"
+      },
+      "token-required-error": "移行トークンが必要です"
+    },
+    "cta": {
+      "button": "このインスタンスをクラウドに移行します",
+      "header": "Grafana スタックの管理はお任せください"
+    },
+    "delete-migration-token-confirm": {
+      "body": "このトークンを自己管理型インストールですでに使用している場合、そのインストールではコンテンツをアップロードできなくなります。",
+      "confirm-button": "トークンの削除",
+      "error-title": "トークン削除エラー",
+      "title": "移行トークンを削除する"
+    },
+    "disconnect-modal": {
+      "body": "これにより、このインストールから移行トークンが削除されます。",
+      "cancel": "キャンセル",
+      "disconnect": "切断する",
+      "disconnecting": "切断中...",
+      "error": "切断中にエラーが発生しました",
+      "title": "クラウドスタックから切断する"
+    },
+    "get-started": {
+      "body": "移行プロセスは、自己管理型 Grafana インスタンスから開始する必要があります。",
+      "configure-pdc-link": "このスタックの PDC を構成する",
+      "link-title": "プライベート データ ソース接続について詳しく見る",
+      "step-1": "セルフマネージド インスタンスにログインし、[管理]、[一般]、[Grafana Cloud への移行] に移動します。",
+      "step-2": "「このインスタンスをクラウドに移行する」を選択します。",
+      "step-3": "移行トークンの入力を求められます。",
+      "step-4": "セルフマネージド インスタンスで、[すべてアップロード] を選択して、データ ソースとダッシュボードをこのクラウド スタックにアップロードします。",
+      "step-5": "一部のデータ ソースがパブリック インターネット上で機能しない場合は、自己管理環境に Private Data Source Connect をインストールする必要があります。",
+      "title": "移行の実行"
+    },
+    "is-it-secure": {
+      "body": "Grafana Labs は、最高水準のデータ プライバシーとセキュリティを維持することに尽力しています。",
+      "link-title": "Grafana Labs トラスト センター",
+      "title": "安全ですか?"
+    },
+    "migrate-to-this-stack": {
+      "body": "一部のリソースを自己管理型 Grafana インストールからこのクラウド スタックに移行できます。",
+      "link-title": "完全な移行ガイドを表示する",
+      "title": "このスタックへの移行をお手伝いします"
+    },
+    "migrated-counts": {
+      "alert_rules": "アラートルール",
+      "contact_points": "連絡先",
+      "dashboards": "ダッシュボード",
+      "datasources": "データソース",
+      "folders": "フォルダ",
+      "library_elements": "ライブラリ要素",
+      "mute_timings": "ミュートのタイミング",
+      "notification_policies": "通知ポリシー",
+      "notification_templates": "通知テンプレート"
+    },
+    "migration-token": {
+      "delete-button": "トークンの削除",
+      "delete-modal-body": "このトークンを自己管理型インストールですでに使用している場合、そのインストールではコンテンツをアップロードできなくなります。",
+      "delete-modal-cancel": "キャンセル",
+      "delete-modal-confirm": "消去",
+      "delete-modal-deleting": "削除中...",
+      "delete-modal-title": "移行トークンを削除する",
+      "error-body": "移行トークンを生成できません。",
+      "error-title": "何か問題が発生しました",
+      "generate-button": "移行トークンを生成する",
+      "generate-button-loading": "移行トークンを生成しています...",
+      "modal-close": "近い",
+      "modal-copy-and-close": "クリップボードにコピーして閉じます",
+      "modal-copy-button": "クリップボードにコピー",
+      "modal-field-description": "トークンは再度表示されなくなるため、今すぐコピーしてください。",
+      "modal-field-label": "トークン",
+      "modal-title": "移行トークンが作成されました",
+      "status": "現在のステータス: <2></2>"
+    },
+    "onprem": {
+      "cancel-snapshot-error-title": "スナップショットの作成をキャンセル中にエラーが発生しました",
+      "create-snapshot-error-title": "スナップショットの作成中にエラーが発生しました",
+      "disconnect-error-title": "切断エラー",
+      "error-see-server-logs": "詳細については、Grafana サーバーのログを参照してください。",
+      "get-session-error-title": "移行構成のロード中にエラーが発生しました",
+      "get-snapshot-error-title": "スナップショットの読み込みエラー",
+      "migration-finished-with-caveat-title": "リソースの移行が完了しました",
+      "migration-finished-with-errors-body": "移行は完了しましたが、一部のアイテムをクラウド スタックに移行できませんでした。",
+      "migration-finished-with-warnings-body": "移行は完了しましたが、いくつかの警告が表示されました。",
+      "snapshot-error-status-body": "スナップショットの作成または移行プロセスの開始中にエラーが発生しました。",
+      "snapshot-error-status-title": "リソースの移行エラー",
+      "success-message": "正常に移行されました {{successCount}} {{types, list}} Grafana Cloud インスタンスに追加します。",
+      "success-message-generic": "正常に移行されました {{successCount}} リソースを Grafana Cloud インスタンスに追加します。",
+      "success-title": "移行が完了しました！",
+      "upload-snapshot-error-title": "スナップショットのアップロード中にエラーが発生しました"
+    },
+    "pdc": {
+      "body": "データ ソースをインターネットに公開すると、セキュリティ上の懸念が生じる可能性があります。",
+      "link-title": "PDC について学ぶ",
+      "title": "すべてのデータ ソースが公共のインターネット上にあるわけではありません"
+    },
+    "pricing": {
+      "body": "Grafana Cloud には、豊富な無料プランと 14 日間の無制限の使用トライアルがあります。",
+      "link-title": "Grafana クラウドの料金",
+      "title": "いくらかかりますか？"
+    },
+    "public-preview": {
+      "button-text": "フィードバックを送信する",
+      "message": "まだ利用可能な SLA はありません。 <2>ドキュメントにアクセスしてください</2> この機能の詳細については、こちらをご覧ください。",
+      "title": "Grafana Cloud への移行はパブリック プレビュー中です"
+    },
+    "resource-details": {
+      "dismiss-button": "わかりました",
+      "error-messages": {
+        "dashboard-already-managed": "ダッシュボードは、クラウド インスタンスの Grafana によってすでにプロビジョニングおよび管理されています。",
+        "datasource-already-managed": "データ ソースは、クラウド インスタンスの Grafana によってすでにプロビジョニングおよび管理されています。",
+        "datasource-invalid-url": "無効な URL を持つデータ ソースがあります。",
+        "datasource-name-conflict": "ターゲット インスタンスに同じ名前のデータ ソースがあります。",
+        "folder-name-conflict": "対象インスタンス内に同名のフォルダが存在します。",
+        "generic-error": "移行中にエラーが発生しました。",
+        "internal-service-error": "移行中にエラーが発生しました。",
+        "library-element-name-conflict": "対象インスタンス内に同名のライブラリ要素が存在します。",
+        "only-core-data-sources": "コア データ ソースのみがサポートされます。",
+        "resource-conflict": "ターゲット インスタンスとリソースの競合があります。",
+        "unexpected-error": "移行中にエラーが発生しました。",
+        "unsupported-data-type": "このデータ型の移行は現在サポートされていません。"
+      },
+      "error-title": "このリソースを移行できません:",
+      "generic-title": "リソース移行の詳細:",
+      "missing-message": "メッセージは提供されていません。",
+      "resource-summary": "{{refId}} ({{typeName}})",
+      "title": "移行リソースの詳細",
+      "warning-title": "リソースは警告とともに移行されました:"
+    },
+    "resource-status": {
+      "error-details-button": "詳細",
+      "failed": "エラー",
+      "migrated": "クラウドにアップロード",
+      "migrating": "アップロード中...",
+      "not-migrated": "まだアップロードされていません",
+      "unknown": "未知",
+      "warning": "警告付きでアップロードされました",
+      "warning-details-button": "詳細"
+    },
+    "resource-table": {
+      "dashboard-load-error": "ダッシュボードを読み込めません",
+      "error-library-element-sub": "ライブラリ要素 {uid}",
+      "error-library-element-title": "ライブラリ要素をロードできません",
+      "unknown-datasource-title": "データソース {{datasourceUID}}",
+      "unknown-datasource-type": "不明なデータソース"
+    },
+    "resource-type": {
+      "alert_rule": "アラートルール",
+      "contact_point": "お問い合わせ窓口",
+      "dashboard": "ダッシュボード",
+      "datasource": "データソース",
+      "folder": "フォルダ",
+      "library_element": "ライブラリ要素",
+      "mute_timing": "ミュートのタイミング",
+      "notification_policy": "通知ポリシー",
+      "notification_template": "通知テンプレート",
+      "unknown": "未知"
+    },
+    "summary": {
+      "cancel-snapshot": "スナップショットをキャンセルする",
+      "disconnect": "切断する",
+      "errored-resource-count": "エラー",
+      "page-loading": "読み込み中...",
+      "rebuild-snapshot": "スナップショットを再構築する",
+      "snapshot-date": "スナップショットのタイムスタンプ",
+      "snapshot-not-created": "まだ作成されていません",
+      "start-migration": "スナップショットの構築",
+      "successful-resource-count": "正常に移行されました",
+      "target-stack-title": "アップロード先",
+      "total-resource-count": "総リソース",
+      "upload-migration": "スナップショットをアップロードする"
+    },
+    "support-types-disclosure": {
+      "text": "ダッシュボード、フォルダー、および組み込みのコア データ ソースは、Grafana Cloud スタックに移行されます。 <2>他の設定の移行について学習します。</2>"
+    },
+    "token-status": {
+      "active": "トークンが作成されアクティブになりました",
+      "no-active": "アクティブなトークンがありません",
+      "unknown": "未知",
+      "unknown-error": "トークン取得エラー"
+    },
+    "what-is-cloud": {
+      "body": "Grafana クラウドは、クラウド ネイティブ環境に最適な、フルマネージドのクラウドホスト型可観測性プラットフォームです。",
+      "link-title": "クラウド機能について学ぶ",
+      "title": "グラファナクラウドとは何ですか?"
+    },
+    "why-host": {
+      "body": "Grafana Cloud には、マネージド ホスティングの利便性に加えて、SLO、インシデント管理、機械学習、強力な可観測性の統合など、多くのクラウド専用機能が含まれています。",
+      "link-title": "さらに質問がありますか?",
+      "title": "Grafana でホストする理由"
+    }
+  },
+  "nav": {
+    "add-new-connections": {
+      "title": "新しい接続を追加"
+    },
+    "admin": {
+      "subtitle": "サーバー全体の設定と、組織、ユーザー、ライセンスなどのリソースへのアクセスを管理します",
+      "title": "サーバー管理者"
+    },
+    "alert-list-legacy": {
+      "title": "アラートルール"
+    },
+    "alerting": {
+      "subtitle": "システムの問題が発生した直後にそれを知ることができます",
+      "title": "警告中"
+    },
+    "alerting-admin": {
+      "subtitle": "アラートマネージャー構成の管理",
+      "title": "設定"
+    },
+    "alerting-am-routes": {
+      "subtitle": "アラートが連絡先にどのようにルーティングされるかを決定する",
+      "title": "通知ポリシー"
+    },
+    "alerting-channels": {
+      "title": "通知チャネル"
+    },
+    "alerting-groups": {
+      "subtitle": "アクティブな通知を含むグループ化されたアラートを表示する",
+      "title": "アクティブな通知"
+    },
+    "alerting-home": {
+      "title": "ホーム"
+    },
+    "alerting-legacy": {
+      "title": "アラート (レガシー)"
+    },
+    "alerting-list": {
+      "subtitle": "アラートを発生させるかどうかを決定するルール",
+      "title": "アラートルール"
+    },
+    "alerting-receivers": {
+      "subtitle": "アラートインスタンスが発生したときに連絡先に通知する方法を選択します",
+      "title": "お問い合わせ先"
+    },
+    "alerting-silences": {
+      "subtitle": "1 つ以上のアラート ルールからの通知を停止する",
+      "title": "沈黙"
+    },
+    "alerting-upgrade": {
+      "subtitle": "既存のレガシー アラートと通知チャネルを新しい Grafana Alerting にアップグレードします。",
+      "title": "アラートのアップグレード"
+    },
+    "alerts-and-incidents": {
+      "subtitle": "アラートおよびインシデント管理アプリ",
+      "title": "アラートと IRM"
+    },
+    "api-keys": {
+      "subtitle": "Grafana HTTP API との対話に使用される API キーを管理および作成する",
+      "title": "APIキー"
+    },
+    "application": {
+      "title": "応用"
+    },
+    "apps": {
+      "subtitle": "Grafana エクスペリエンスを拡張するアプリ プラグイン",
+      "title": "その他のアプリ"
+    },
+    "authentication": {
+      "title": "認証"
+    },
+    "bookmarks": {
+      "title": "ブックマーク"
+    },
+    "bookmarks-empty": {
+      "title": "ページをブックマークするとここに表示されます"
+    },
+    "collector": {
+      "title": "コレクタ"
+    },
+    "config": {
+      "title": "管理"
+    },
+    "config-access": {
+      "subtitle": "個々のユーザー、チーム、サービス アカウントのアクセスを構成する",
+      "title": "ユーザーとアクセス"
+    },
+    "config-general": {
+      "subtitle": "Grafana 全体のデフォルトの設定と設定を管理する",
+      "title": "一般的な"
+    },
+    "config-plugins": {
+      "subtitle": "プラグインをインストールし、データ間の関係を定義する",
+      "title": "プラグインとデータ"
+    },
+    "connect-data": {
+      "title": "データを接続する"
+    },
+    "connections": {
+      "subtitle": "新しい接続を参照して作成する",
+      "title": "接続"
+    },
+    "correlations": {
+      "subtitle": "相関関係の追加と構成",
+      "title": "相関関係"
+    },
+    "create": {
+      "title": "作成する"
+    },
+    "create-alert": {
+      "title": "新しいアラート ルール"
+    },
+    "create-dashboard": {
+      "title": "ダッシュボード"
+    },
+    "create-folder": {
+      "title": "フォルダ"
+    },
+    "create-import": {
+      "title": "ダッシュボードのインポート"
+    },
+    "dashboards": {
+      "subtitle": "ダッシュボードを作成および管理してデータを視覚化する",
+      "title": "ダッシュボード"
+    },
+    "data-sources": {
+      "subtitle": "接続されているデータ ソース接続を表示および管理する",
+      "title": "データソース"
+    },
+    "databases": {
+      "title": "データベース"
+    },
+    "datasources": {
+      "subtitle": "データソースの追加と構成",
+      "title": "データソース"
+    },
+    "detect": {
+      "title": "検出する"
+    },
+    "explore": {
+      "title": "探検する"
+    },
+    "frontend": {
+      "subtitle": "実際のユーザー監視に関する洞察を得る",
+      "title": "フロントエンド"
+    },
+    "frontend-app": {
+      "title": "フロントエンド"
+    },
+    "global-orgs": {
+      "subtitle": "同じサーバー上で実行される Grafana の分離されたインスタンス",
+      "title": "組織"
+    },
+    "global-users": {
+      "subtitle": "Grafana でユーザーを管理する",
+      "title": "ユーザー"
+    },
+    "grafana-quaderno": {
+      "title": "グラファナ・クアデルノ"
+    },
+    "groupsync": {
+      "subtitle": "ID プロバイダー グループの Grafana ロールへのマッピングを管理する"
+    },
+    "help": {
+      "title": "ヘルプ"
+    },
+    "help/community": "コミュニティ",
+    "help/documentation": "ドキュメント",
+    "help/keyboard-shortcuts": "キーボードショートカット",
+    "help/support": "サポート",
+    "home": {
+      "title": "ホーム"
+    },
+    "incidents": {
+      "title": "事件"
+    },
+    "infrastructure": {
+      "subtitle": "インフラストラクチャの健全性を理解する",
+      "title": "インフラストラクチャー"
+    },
+    "integrations": {
+      "title": "統合"
+    },
+    "k6": {
+      "title": "パフォーマンス"
+    },
+    "kubernetes": {
+      "title": "Kubernetes"
+    },
+    "library-panels": {
+      "subtitle": "複数のダッシュボードに追加できる再利用可能なパネル",
+      "title": "ライブラリパネル"
+    },
+    "machine-learning": {
+      "title": "機械学習"
+    },
+    "manage-folder": {
+      "subtitle": "フォルダーのダッシュボードと権限を管理する"
+    },
+    "migrate-to-cloud": {
+      "subtitle": "自己管理型インストールからクラウド スタックに構成をコピーする",
+      "title": "Grafana クラウドへの移行"
+    },
+    "monitoring": {
+      "subtitle": "すぐに使える可観測性ソリューション",
+      "title": "可観測性"
+    },
+    "new": {
+      "title": "新しい"
+    },
+    "new-dashboard": {
+      "title": "新しいダッシュボード"
+    },
+    "new-folder": {
+      "title": "新しいフォルダー"
+    },
+    "observability": {
+      "title": "可観測性"
+    },
+    "oncall": {
+      "title": "オンコール"
+    },
+    "org-settings": {
+      "subtitle": "組織全体で設定を管理する",
+      "title": "デフォルトの設定"
+    },
+    "playlists": {
+      "subtitle": "連続して表示されるダッシュボードのグループ",
+      "title": "プレイリスト"
+    },
+    "plugins": {
+      "subtitle": "プラグインで Grafana エクスペリエンスを拡張",
+      "title": "プラグイン"
+    },
+    "private-data-source-connections": {
+      "subtitle": "Grafana Cloud からの受信トラフィックに対してネットワークを開くことなく、安全なネットワーク内に存在するデータをクエリします。",
+      "title": "プライベートデータソース接続"
+    },
+    "profile/notifications": {
+      "title": "通知履歴"
+    },
+    "profile/password": {
+      "title": "パスワードを変更する"
+    },
+    "profile/settings": {
+      "title": "プロフィール"
+    },
+    "profiles": {
+      "title": "プロフィール"
+    },
+    "public": {
+      "title": "パブリックダッシュボード"
+    },
+    "recently-deleted": {
+      "subtitle": "ここにリストされたアイテムは 30 日を超えて自動的に削除されます。",
+      "title": "最近削除されました"
+    },
+    "recorded-queries": {
+      "title": "記録されたクエリ"
+    },
+    "reporting": {
+      "title": "報告"
+    },
+    "scenes": {
+      "title": "シーン"
+    },
+    "search": {
+      "placeholderCommandPalette": "検索またはジャンプ..."
+    },
+    "search-dashboards": {
+      "title": "ダッシュボードの検索"
+    },
+    "server-settings": {
+      "subtitle": "Grafana 構成で定義された設定を表示する",
+      "title": "設定"
+    },
+    "service-accounts": {
+      "subtitle": "サービス アカウントを使用して Grafana で自動化されたワークロードを実行する",
+      "title": "サービスアカウント"
+    },
+    "setup-guide": {
+      "title": "セットアップガイド"
+    },
+    "shared-dashboard": {
+      "subtitle": "組織の外部共有ダッシュボードを管理する",
+      "title": "共有ダッシュボード"
+    },
+    "sign-out": {
+      "title": "サインアウト"
+    },
+    "slo": {
+      "title": "SLO"
+    },
+    "snapshots": {
+      "subtitle": "ダッシュボードとパネルのインタラクティブで公開されているポイントインタイム表現",
+      "title": "スナップショット"
+    },
+    "starred": {
+      "title": "スター付き"
+    },
+    "starred-empty": {
+      "title": "スター付きダッシュボードがここに表示されます"
+    },
+    "statistics-and-licensing": {
+      "title": "統計とライセンス"
+    },
+    "storage": {
+      "subtitle": "ファイルストレージを管理する",
+      "title": "ストレージ"
+    },
+    "support-bundles": {
+      "subtitle": "サポート バンドルをダウンロードする",
+      "title": "サポートバンドル"
+    },
+    "synthetics": {
+      "title": "合成繊維"
+    },
+    "teams": {
+      "subtitle": "共通のダッシュボードと権限のニーズを持つユーザーのグループ",
+      "title": "チーム"
+    },
+    "testing-and-synthetics": {
+      "subtitle": "k6 と合成モニタリングの洞察でパフォーマンスを最適化する",
+      "title": "試験と合成物質"
+    },
+    "upgrading": {
+      "title": "統計とライセンス"
+    },
+    "users": {
+      "subtitle": "ユーザーを招待して役割を割り当てる",
+      "title": "ユーザー"
+    }
+  },
+  "navigation": {
+    "item": {
+      "add-bookmark": "ブックマークに追加",
+      "remove-bookmark": "ブックマークから削除"
+    },
+    "kiosk": {
+      "tv-alert": "ESC を押してキオスク モードを終了します"
+    },
+    "megamenu": {
+      "close": "メニューを閉じる",
+      "dock": "ドックメニュー",
+      "list-label": "ナビゲーション",
+      "open": "メニューを開く",
+      "undock": "アンドックメニュー"
+    },
+    "toolbar": {
+      "close-menu": "メニューを閉じる",
+      "enable-kiosk": "キオスクモードを有効にする",
+      "open-menu": "メニューを開く",
+      "toggle-search-bar": "上部の検索バーを切り替えます"
+    }
+  },
+  "news": {
+    "drawer": {
+      "close": "引き出しを閉じる"
+    },
+    "title": "ブログの最新情報"
+  },
+  "notifications": {
+    "empty-state": {
+      "description": "受け取った通知はここに表示されます",
+      "title": "皆さんも追いついてきました！"
+    },
+    "starred-dashboard": "ダッシュボードのスター付き",
+    "unstarred-dashboard": "スターを外したダッシュボード"
+  },
+  "oauth": {
+    "form": {
+      "server-discovery-action-button": "OpenID Connect ディスカバリー URL を入力してください",
+      "server-discovery-modal-close": "近い",
+      "server-discovery-modal-loading": "読み込み中...",
+      "server-discovery-modal-submit": "提出する"
+    },
+    "login": {
+      "error": "ログインプロバイダーがログイン要求を拒否しました"
+    }
+  },
+  "panel": {
+    "header-menu": {
+      "copy": "コピー",
+      "create-library-panel": "ライブラリパネルの作成",
+      "duplicate": "重複",
+      "edit": "編集",
+      "explore": "探検する",
+      "get-help": "助けを求める",
+      "hide-legend": "凡例を隠す",
+      "inspect": "検査する",
+      "inspect-data": "データ",
+      "inspect-json": "パネルJSON",
+      "more": "もっと...",
+      "new-alert-rule": "新しいアラート ルール",
+      "query": "クエリ",
+      "remove": "取り除く",
+      "replace-library-panel": "ライブラリパネルを交換する",
+      "share": "共有",
+      "show-legend": "凡例を表示",
+      "unlink-library-panel": "ライブラリパネルのリンクを解除する",
+      "view": "ビュー"
+    }
+  },
+  "panel-search": {
+    "no-matches": "一致するものが見つかりませんでした",
+    "unsupported-layout": "サポートされていないレイアウト"
+  },
+  "panel-type-filter": {
+    "clear-button": "クリアタイプ"
+  },
+  "playlist-edit": {
+    "error-prefix": "プレイリストの読み込みエラー:",
+    "form": {
+      "add-tag-label": "タグで追加",
+      "add-tag-placeholder": "タグを選択してください",
+      "add-title-label": "タイトルで追加",
+      "cancel": "キャンセル",
+      "heading": "ダッシュボードの追加",
+      "interval-label": "間隔",
+      "interval-placeholder": "5m",
+      "interval-required": "間隔は必須です",
+      "name-label": "名前",
+      "name-placeholder": "名前",
+      "name-required": "名前は必須です",
+      "save": "保存",
+      "table-delete": "プレイリスト項目を削除する",
+      "table-drag": "ドラッグアンドドロップして並べ替える",
+      "table-empty": "プレイリストが空です。",
+      "table-heading": "ダッシュボード"
+    },
+    "sub-title": "プレイリストは、事前に選択されたダッシュボードのリスト内を循環します。",
+    "title": "プレイリストを編集する"
+  },
+  "playlist-page": {
+    "card": {
+      "delete": "プレイリストを削除する",
+      "edit": "プレイリストを編集する",
+      "start": "プレイリストの開始",
+      "tooltip": "プレイリストを共有する"
+    },
+    "create-button": {
+      "title": "新しいプレイリスト"
+    },
+    "delete-modal": {
+      "body": "削除してもよろしいですか {{name}} プレイリスト？",
+      "confirm-text": "消去"
+    },
+    "empty": {
+      "button": "プレイリストの作成",
+      "pro-tip": "プレイリストを使用すると、ユーザーが制御せずにテレビ上のダッシュボードを切り替えることができます。 <2>もっと詳しく知る</2>",
+      "title": "まだプレイリストが作成されていません"
+    }
+  },
+  "playlists": {
+    "empty-state": {
+      "message": "プレイリストが見つかりません"
+    }
+  },
+  "plugins": {
+    "catalog": {
+      "update-all": {
+        "all-plugins-updated": "すべてのプラグインが更新されました!",
+        "available-header": "利用可能",
+        "button": "すべて更新",
+        "cloud-update-message": "※プラグインが使用可能になるまでに数分かかる場合があります。",
+        "error": "プラグインの更新中にエラーが発生しました:",
+        "error-status-text": "失敗しました - エラーメッセージを参照してください",
+        "header": "次のプラグインにはアップデートが利用可能です",
+        "installed-header": "インストール済み",
+        "modal-confirmation": "アップデート",
+        "modal-dismiss": "近い",
+        "modal-in-progress": "更新中...",
+        "modal-title": "プラグインの更新",
+        "name-header": "名前",
+        "update-header": "アップデート",
+        "update-status-text": "プラグインが更新されました"
+      },
+      "versions": {
+        "confirmation-text-1": "本当にバージョンをダウングレードしてもよろしいですか?",
+        "confirmation-text-2": "通常はこれを行うべきではありません",
+        "downgrade-confirm": "ダウングレード",
+        "downgrade-title": "プラグインのバージョンをダウングレードする"
+      }
+    },
+    "details": {
+      "labels": {
+        "contactGrafanaLabs": "Grafana Labs へのお問い合わせ",
+        "dependencies": "依存関係",
+        "downloads": "ダウンロード",
+        "from": "から",
+        "installedVersion": "インストールされているバージョン: ",
+        "lastCommitDate": "最終コミット日:",
+        "latestVersion": "最新バージョン: ",
+        "links": "リンク ",
+        "reportAbuse": "懸念事項を報告する ",
+        "signature": "サイン",
+        "status": "状態",
+        "updatedAt": "最終更新日:",
+        "version": "バージョン"
+      }
+    },
+    "empty-state": {
+      "message": "プラグインが見つかりません"
+    },
+    "plugin-help": {
+      "error": "ヘルプの読み込み中にエラーが発生しました。",
+      "not-found": "クエリ ヘルプが見つかりませんでした。"
+    }
+  },
+  "profile": {
+    "change-password": {
+      "cancel-button": "キャンセル",
+      "cannot-change-password-message": "ここではパスワードを変更できません。",
+      "change-password-button": "パスワードを変更する",
+      "confirm-password-label": "パスワードを認証する",
+      "confirm-password-required": "新しいパスワードの確認が必要です",
+      "ldap-auth-proxy-message": "LDAP または認証プロキシを使用してサインインしている場合は、パスワードを変更できません。",
+      "new-password-label": "新しいパスワード",
+      "new-password-required": "新しいパスワードが必要です",
+      "new-password-same-as-old": "新しいパスワードを古いパスワードと同じにすることはできません。",
+      "old-password-label": "以前のパスワード",
+      "old-password-required": "古いパスワードが必要です",
+      "passwords-must-match": "パスワードが一致する必要があります",
+      "strong-password-validation-register": "パスワードが強力なパスワード ポリシーに準拠していません"
+    }
+  },
+  "public-dashboard": {
+    "acknowledgment-checkboxes": {
+      "ack-title": "ダッシュボードを公開する前に、次の点を確認してください。",
+      "data-src-ack-desc": "現在、公開はデータ ソースのサブセットでのみ機能します*",
+      "data-src-ack-tooltip": "パブリック データソースについて詳しく見る",
+      "public-ack-desc": "ダッシュボード全体が公開されます*",
+      "public-ack-tooltip": "公開ダッシュボードの詳細については、こちらをご覧ください。",
+      "usage-ack-desc": "ダッシュボードを公開すると、表示されるたびにクエリが実行されるため、コストが増加する可能性があります*",
+      "usage-ack-desc-tooltip": "クエリ キャッシュの詳細については、こちらをご覧ください。"
+    },
+    "config": {
+      "can-view-dashboard-radio-button-label": "ダッシュボードを表示できる",
+      "copy-button": "コピー",
+      "dashboard-url-field-label": "ダッシュボードの URL",
+      "email-share-type-option-label": "特定の人だけ",
+      "pause-sharing-dashboard-label": "ダッシュボードの共有を一時停止する",
+      "public-share-type-option-label": "リンクを知っている人は誰でも",
+      "revoke-public-URL-button": "パブリック URL を取り消す",
+      "revoke-public-URL-button-title": "パブリック URL を取り消す",
+      "settings-title": "設定"
+    },
+    "configuration": {
+      "display-annotations-description": "このダッシュボードに注釈を表示します",
+      "display-annotations-label": "注釈を表示する",
+      "enable-time-range-description": "ユーザーが時間範囲を変更できるようにする",
+      "enable-time-range-label": "時間範囲を有効にする",
+      "settings-label": "設定",
+      "success-pause": "ダッシュボードへのアクセスが一時停止されました",
+      "success-resume": "ダッシュボードへのアクセスが再開されました",
+      "success-update": "設定が正常に更新されました",
+      "success-update-old": "公開ダッシュボードが更新されました!",
+      "time-range-label": "時間範囲",
+      "time-range-tooltip": "共有ダッシュボードは、ダッシュボードのデフォルトの時間範囲設定を使用します。"
+    },
+    "create-page": {
+      "generate-public-url-button": "パブリック URL を生成する",
+      "unsupported-features-desc": "現在、テンプレート変数またはフロントエンド データ ソースはサポートされていません。",
+      "welcome-title": "公開ダッシュボードへようこそ!"
+    },
+    "delete-modal": {
+      "revoke-body-text": "この URL を取り消してもよろしいですか?",
+      "revoke-title": "パブリック URL を取り消す"
+    },
+    "email-sharing": {
+      "accept-button": "受け入れる",
+      "alert-text": "電子メールによるダッシュボードの共有は、共有されるダッシュボードの数に関係なく、30 日間のトークンの期間中、ユーザーごとに請求されます。",
+      "bill-ack": "ユーザーの追加には支払いが必要であることを理解しています。*",
+      "cancel-button": "キャンセル",
+      "input-invalid-email-text": "無効な電子メール",
+      "input-required-email-text": "メールアドレスは必須です",
+      "invite-button": "招待する",
+      "invite-field-desc": "メールで人を招待する",
+      "invite-field-label": "招待する",
+      "learn-more-button": "もっと詳しく知る",
+      "recipient-email-placeholder": "電子メール",
+      "recipient-invalid-email-text": "無効な電子メール",
+      "recipient-invitation-button": "招待する",
+      "recipient-invitation-description": "メールで誰かを招待する",
+      "recipient-invitation-tooltip": "このダッシュボードには機密データが含まれています。",
+      "recipient-list-description": "あなたが直接招待した人だけがこのダッシュボードにアクセスできます",
+      "recipient-list-title": "アクセスできる人",
+      "recipient-required-email-text": "メールアドレスは必須です",
+      "resend-button": "再送信",
+      "resend-button-title": "再送信",
+      "resend-invite-label": "招待を再送信する",
+      "revoke-access-label": "アクセスを取り消す",
+      "revoke-button": "取り消す",
+      "revoke-button-title": "取り消す",
+      "success-creation": "ダッシュボードを外部共有する準備ができました",
+      "success-share-type-change": "ダッシュボードへのアクセスが更新されました: リンクを使用して特定の人のみがアクセスできるようになりました"
+    },
+    "modal-alerts": {
+      "no-upsert-perm-alert-desc": "管理者に連絡して許可を取得してください {{mode}} パブリックダッシュボード",
+      "no-upsert-perm-alert-title": "許可がありません {{ mode }} 公開ダッシュボード",
+      "save-dashboard-changes-alert-title": "パブリック構成を更新する前に、ダッシュボードの変更を保存してください。",
+      "unsupport-data-source-alert-readmore-link": "サポートされているデータソースの詳細を読む",
+      "unsupported-data-source-alert-desc": "このダッシュボードには、パブリック ダッシュボードではサポートされていないデータ ソースがあります。 {{unsupportedDataSources}}。",
+      "unsupported-data-source-alert-title": "サポートされていないデータソース",
+      "unsupported-template-variable-alert-desc": "このパブリック ダッシュボードはテンプレート変数を使用しているため、機能しない可能性があります",
+      "unsupported-template-variable-alert-title": "テンプレート変数はサポートされていません"
+    },
+    "public-sharing": {
+      "accept-button": "受け入れる",
+      "alert-text": "このダッシュボードを外部と共有すると、リンクを知っている誰でも完全にアクセスできるようになります。",
+      "cancel-button": "キャンセル",
+      "learn-more-button": "もっと詳しく知る",
+      "public-ack": "このダッシュボード全体が公開されることを理解しています。*",
+      "success-creation": "ダッシュボードが一般公開されるようになりました",
+      "success-share-type-change": "ダッシュボードへのアクセスが更新されました: リンクを知っている人は誰でもアクセスできるようになりました"
+    },
+    "settings-bar-header": {
+      "collapse-settings-tooltip": "設定を折りたたむ",
+      "expand-settings-tooltip": "設定を展開する"
+    },
+    "settings-configuration": {
+      "default-time-range-label": "デフォルトの時間範囲",
+      "default-time-range-label-desc": "パブリック ダッシュボードは、ダッシュボードのデフォルトの時間範囲設定を使用します。",
+      "show-annotations-label": "注釈を表示する",
+      "show-annotations-label-desc": "公開ダッシュボードに注釈を表示する",
+      "time-range-picker-label": "時間範囲ピッカーが有効になっています",
+      "time-range-picker-label-desc": "視聴者が時間範囲を変更できるようにする"
+    },
+    "settings-summary": {
+      "annotations-hide-text": "注釈 = 非表示",
+      "annotations-show-text": "注釈 = 表示",
+      "time-range-picker-disabled-text": "時間範囲ピッカー = 無効",
+      "time-range-picker-enabled-text": "時間範囲ピッカー = 有効",
+      "time-range-text": "時間範囲 = "
+    },
+    "share": {
+      "success-delete": "ダッシュボードは共有できなくなりました",
+      "success-delete-old": "公開ダッシュボードが削除されました。"
+    },
+    "share-configuration": {
+      "share-type-label": "リンクアクセス"
+    },
+    "share-externally": {
+      "copy-link-button": "外部リンクをコピーする",
+      "email-share-type-option-description": "リンクを知っている人のみがダッシュボードにアクセスできます",
+      "email-share-type-option-label": "特定の人だけ",
+      "no-upsert-perm-alert-desc": "管理者に連絡して許可を取得してください {{mode}} 共有ダッシュボード",
+      "no-upsert-perm-alert-title": "許可がありません {{ mode }} 共有ダッシュボード",
+      "pause-access-button": "アクセスを一時停止する",
+      "pause-access-tooltip": "一時停止すると、すべてのユーザーが一時的にこのダッシュボードにアクセスできなくなります",
+      "public-share-type-option-description": "リンクを知っている人は誰でもダッシュボードにアクセスできます",
+      "public-share-type-option-label": "リンクを知っている人は誰でも",
+      "resume-access-button": "アクセスを再開する",
+      "revoke-access-button": "アクセスを取り消す",
+      "revoke-access-description": "このアクセスを取り消してもよろしいですか?",
+      "unsupported-data-source-alert-desc": "このダッシュボードには、共有ダッシュボードでサポートされていないデータ ソースがあります。 {{unsupportedDataSources}}。"
+    },
+    "sharing": {
+      "success-creation": "ダッシュボードが公開されました！"
+    }
+  },
+  "public-dashboard-list": {
+    "button": {
+      "config-button-tooltip": "パブリックダッシュボードを構成する",
+      "revoke-button-text": "パブリック URL を取り消す",
+      "revoke-button-tooltip": "公開ダッシュボード URL を取り消す",
+      "view-button-tooltip": "公開ダッシュボードを表示する"
+    },
+    "empty-state": {
+      "message": "まだ公開ダッシュボードを作成していません",
+      "more-info": "既存のダッシュボードからパブリック ダッシュボードを作成します。 <1>共有</1> モーダル。 <4>もっと詳しく知る</4>"
+    },
+    "toggle": {
+      "pause-sharing-toggle-text": "共有を一時停止する"
+    }
+  },
+  "public-dashboard-users-access-list": {
+    "dashboard-modal": {
+      "external-link": "外部リンク",
+      "loading-text": "読み込み中...",
+      "open-dashboard-list-text": "ダッシュボードリストを開く",
+      "public-dashboard-link": "公開ダッシュボードのURL",
+      "public-dashboard-setting": "パブリックダッシュボードの設定",
+      "sharing-setting": "共有設定"
+    },
+    "delete-user-modal": {
+      "delete-user-button-text": "ユーザーの削除",
+      "delete-user-cancel-button": "キャンセル",
+      "delete-user-revoke-access-button": "アクセスを取り消す",
+      "revoke-access-title": "アクセスを取り消す",
+      "revoke-user-access-modal-desc-line1": "へのアクセスを取り消してもよろしいですか? {{email}}?",
+      "revoke-user-access-modal-desc-line2": "このアクションはすぐに取り消されます {{email}}はすべてのパブリック ダッシュボードにアクセスできます。"
+    },
+    "delete-user-shared-dashboards-modal": {
+      "revoke-user-access-modal-desc-line2": "このアクションはすぐに取り消されます {{email}}はすべての共有ダッシュボードにアクセスできます。"
+    },
+    "modal": {
+      "dashboard-modal-title": "パブリックダッシュボード",
+      "shared-dashboard-modal-title": "共有ダッシュボード"
+    },
+    "table-body": {
+      "dashboard-count_other": "{{count}} ダッシュボード"
+    },
+    "table-header": {
+      "activated-label": "アクティブ化された",
+      "activated-tooltip": "ユーザーがダッシュボードに対してアクティブ ユーザーになった最も古い時間",
+      "email-label": "電子メール",
+      "last-active-label": "最後にアクティブだった",
+      "origin-label": "起源",
+      "role-label": "役割"
+    }
+  },
+  "query-library": {
+    "datasource-names": "データソース名:",
+    "delete-query-button": "クエリの削除",
+    "query-template-get-error": "ライブラリからクエリ テンプレートを取得しようとしたときにエラーが発生しました: {{error}}",
+    "search": "データソース、クエリの内容、説明による検索",
+    "user-info-get-error": "ライブラリからユーザー情報を取得しようとしたときにエラーが発生しました: {{error}}",
+    "user-names": "ユーザー名:"
+  },
+  "query-operation": {
+    "header": {
+      "collapse-row": "クエリ行を折りたたむ",
+      "datasource-help": "データソースのヘルプを表示する",
+      "drag-and-drop": "ドラッグアンドドロップして並べ替える",
+      "duplicate-query": "重複したクエリ",
+      "expand-row": "クエリ行を展開する",
+      "hide-response": "応答を隠す",
+      "remove-query": "クエリの削除",
+      "save-to-query-library": "クエリライブラリに保存",
+      "show-response": "応答を表示",
+      "toggle-edit-mode": "テキスト編集モードを切り替える"
+    },
+    "query-editor-not-exported": "データ ソース プラグインはクエリ エディター コンポーネントをエクスポートしません"
+  },
+  "recently-deleted": {
+    "buttons": {
+      "delete": "完全に削除",
+      "restore": "復元する"
+    },
+    "page": {
+      "no-deleted-dashboards": "最近ダッシュボードを削除していません。",
+      "no-deleted-dashboards-text": "ダッシュボードを削除すると、完全に削除されるまで 30 日間ここに表示されます。",
+      "no-search-result": "クエリに対する結果が見つかりませんでした"
+    },
+    "permanently-delete-modal": {
+      "confirm-text": "消去",
+      "delete-button": "消去",
+      "delete-loading": "削除中...",
+      "title": "ダッシュボードを完全に削除する",
+      "text_other": "このアクションにより削除されます {{numberOfDashboards}} ダッシュボード。"
+    },
+    "restore-modal": {
+      "restore-button": "復元する",
+      "restore-loading": "復元中...",
+      "title": "ダッシュボードの復元",
+      "folder-picker-text_other": "ダッシュボードを復元するフォルダーを選択してください。",
+      "text_other": "このアクションにより復元されます {{numberOfDashboards}} ダッシュボード。"
+    }
+  },
+  "recentlyDeleted": {
+    "filter": {
+      "placeholder": "ダッシュボードを検索する"
+    }
+  },
+  "refresh-picker": {
+    "aria-label": {
+      "choose-interval": "自動更新がオフになりました。",
+      "duration-selected": "現在の間隔で更新間隔を選択します {{durationAriaLabel}} 選択された"
+    },
+    "auto-option": {
+      "aria-label": "",
+      "label": ""
+    },
+    "live-option": {
+      "aria-label": "ライブストリーミングをオンにする",
+      "label": "ライブ"
+    },
+    "off-option": {
+      "aria-label": "自動更新をオフにする",
+      "label": "オフ"
+    },
+    "tooltip": {
+      "interval-selected": "自動更新間隔を設定する",
+      "turned-off": "自動リフレッシュオフ"
+    }
+  },
+  "return-to-previous": {
+    "button": {
+      "label": "戻る {{title}}"
+    },
+    "dismissable-button": "近い"
+  },
+  "role-picker": {
+    "built-in": {
+      "basic-roles": "基本的な役割"
+    },
+    "input": {
+      "no-roles": "役割が割り当てられていません"
+    },
+    "menu": {
+      "clear-button": "すべてクリア",
+      "tooltip": "「基本ロールなし」オプションを選択して、カスタムのニーズにアクセス許可を追加できるようになりました。 <1>私たちのドキュメント</1>。"
+    },
+    "sub-menu": {
+      "clear-button": "クリア"
+    },
+    "title": {
+      "description": "ユーザーにロールを割り当てて、Grafana の機能とリソースへのアクセスをきめ細かく制御します。 <2>ドキュメント</2>。"
+    }
+  },
+  "role-picker-drawer": {
+    "basic-roles": {
+      "label": "基本的な役割"
+    }
+  },
+  "route-error": {
+    "description": "Grafana が更新された可能性があります。",
+    "reload-button": "リロード",
+    "title": "アプリケーションファイルが見つかりません"
+  },
+  "save-dashboards": {
+    "name-exists": {
+      "message-info": "選択したフォルダー内に同じ名前のダッシュボードが既に存在します (最近削除されたダッシュボードを含む)。",
+      "message-suggestion": "別の名前またはフォルダを選択してください。",
+      "title": "ダッシュボード名はすでに存在します"
+    }
+  },
+  "scopes": {
+    "dashboards": {
+      "collapse": "崩壊",
+      "expand": "拡大する",
+      "loading": "ダッシュボードの読み込み中",
+      "noResultsForFilter": "クエリに対する結果が見つかりませんでした",
+      "noResultsForFilterClear": "検索をクリア",
+      "noResultsForScopes": "選択したスコープのダッシュボードが見つかりません",
+      "noResultsNoScopes": "スコープが選択されていません",
+      "search": "検索",
+      "toggle": {
+        "collapse": "提案されたダッシュボードのリストを折りたたむ",
+        "disabled": "推奨されるダッシュボードのリストは読み取り専用モードのため無効になっています",
+        "expand": "提案されたダッシュボードのリストを展開する"
+      }
+    },
+    "selector": {
+      "apply": "適用する",
+      "cancel": "キャンセル",
+      "input": {
+        "placeholder": "スコープを選択してください...",
+        "removeAll": "すべてのスコープを削除します"
+      },
+      "title": "スコープの選択"
+    },
+    "tree": {
+      "collapse": "崩壊",
+      "expand": "拡大する",
+      "headline": {
+        "noResults": "クエリに対する結果が見つかりませんでした",
+        "recommended": "推奨",
+        "results": "結果"
+      },
+      "search": "検索"
+    }
+  },
+  "search": {
+    "actions": {
+      "include-panels": "パネルを含める",
+      "remove-datasource-filter": "データソース: {{datasource}}",
+      "sort-placeholder": "選別",
+      "starred": "スター付き",
+      "view-as-folders": "フォルダごとに表示",
+      "view-as-list": "リストとして表示"
+    },
+    "dashboard-actions": {
+      "import": "輸入",
+      "new": "新しい",
+      "new-dashboard": "新しいダッシュボード",
+      "new-folder": "新しいフォルダー"
+    },
+    "results-table": {
+      "datasource-header": "データソース",
+      "deleted-less-than-1-min": "< 1 分",
+      "deleted-remaining-header": "残り時間",
+      "location-header": "位置",
+      "name-header": "名前",
+      "tags-header": "タグ",
+      "type-dashboard": "ダッシュボード",
+      "type-folder": "フォルダ",
+      "type-header": "タイプ"
+    },
+    "search-input": {
+      "include-panels-placeholder": "ダッシュボード、フォルダー、パネルの検索",
+      "placeholder": "ダッシュボードとフォルダーを検索する"
+    }
+  },
+  "select": {
+    "select-menu": {
+      "selected-count": "選択済み "
+    }
+  },
+  "service-account-create-page": {
+    "create": {
+      "button": "作成する"
+    },
+    "name": {
+      "label": "表示名",
+      "required-error": "表示名は必須です"
+    },
+    "page-nav": {
+      "label": "サービスアカウントの作成"
+    },
+    "role": {
+      "label": "役割"
+    }
+  },
+  "service-accounts": {
+    "empty-state": {
+      "button-title": "サービスアカウントの追加",
+      "message": "サービスアカウントが見つかりません",
+      "more-info": "他のアプリケーションへの API アクセスに対して特定の権限を提供できることを覚えておいてください。",
+      "title": "まだサービス アカウントを作成していません"
+    }
+  },
+  "share-dashboard": {
+    "menu": {
+      "export-json-title": "JSONとしてエクスポート",
+      "share-externally-title": "外部と共有する",
+      "share-internally-title": "社内で共有する",
+      "share-snapshot-title": "スナップショットを共有する"
+    },
+    "share-button": "共有",
+    "share-button-tooltip": "リンクをコピー"
+  },
+  "share-drawer": {
+    "confirm-action": {
+      "back-arrow-button": "戻るボタン",
+      "cancel-button": "キャンセル"
+    }
+  },
+  "share-modal": {
+    "dashboard": {
+      "title": "共有"
+    },
+    "embed": {
+      "copy": "クリップボードにコピー",
+      "html": "HTMLを埋め込む",
+      "html-description": "以下の HTML コードを貼り付けて、別の Web ページに含めることができます。",
+      "info": "このパネルに iframe を埋め込むための HTML を生成します",
+      "time-range": "ロック時間範囲"
+    },
+    "export": {
+      "back-button": "設定のエクスポートに戻る",
+      "cancel-button": "キャンセル",
+      "info-text": "このダッシュボードをエクスポートします。",
+      "loading": "読み込み中...",
+      "save-button": "ファイルに保存",
+      "share-externally-label": "外部と共有するためにエクスポートする",
+      "view-button": "JSON を表示する"
+    },
+    "library": {
+      "info": "ライブラリパネルを作成します。"
+    },
+    "link": {
+      "copy-link-button": "コピー",
+      "info-text": "このダッシュボードまたはパネルへの直接リンクを作成し、以下のオプションを使用してカスタマイズします。",
+      "link-url": "リンクURL",
+      "render-alert": "イメージレンダラープラグインがインストールされていません",
+      "render-instructions": "パネル イメージをレンダリングするには、 <2>Grafana イメージ レンダラー プラグイン</2>。",
+      "rendered-image": "ダイレクトリンクでレンダリングされたイメージ",
+      "save-alert": "ダッシュボードが保存されない",
+      "save-dashboard": "パネル イメージをレンダリングするには、最初にダッシュボードを保存する必要があります。",
+      "shorten-url": "短縮URL",
+      "time-range-description": "現在の相対時間範囲を絶対時間範囲に変換します。",
+      "time-range-label": "ロック時間範囲"
+    },
+    "panel": {
+      "title": "共有パネル"
+    },
+    "snapshot": {
+      "cancel-button": "キャンセル",
+      "copy-link-button": "コピー",
+      "delete-button": "スナップショットを削除します。",
+      "deleted-message": "スナップショットは削除されました。",
+      "expire": "期限切れ",
+      "expire-day": "1日",
+      "expire-hour": "1時間",
+      "expire-never": "一度もない",
+      "expire-week": "1週間",
+      "info-text-1": "スナップショットは、インタラクティブなダッシュボードを即座にパブリックに共有する方法です。",
+      "info-text-2": "スナップショットを覚えておいてください <1>誰でも閲覧できます</1> リンクがあり、その URL にアクセスできるようになります。",
+      "local-button": "スナップショットの公開",
+      "mistake-message": "間違いを犯しましたか？ ",
+      "name": "スナップショット名",
+      "timeout": "タイムアウト (秒)",
+      "timeout-description": "ダッシュボードのメトリクスの収集に時間がかかる場合は、タイムアウト値の構成が必要になる場合があります。",
+      "url-label": "スナップショットの URL"
+    },
+    "tab-title": {
+      "embed": "埋め込む",
+      "export": "輸出",
+      "library-panel": "ライブラリパネル",
+      "link": "リンク",
+      "panel-embed": "埋め込む",
+      "public-dashboard": "パブリックダッシュボード",
+      "public-dashboard-title": "パブリックダッシュボード",
+      "snapshot": "スナップショット"
+    },
+    "theme-picker": {
+      "current": "現在",
+      "dark": "暗い",
+      "field-name": "テーマ",
+      "light": "ライト"
+    },
+    "view-json": {
+      "copy-button": "クリップボードにコピー"
+    }
+  },
+  "share-panel": {
+    "drawer": {
+      "new-library-panel-title": "新しいライブラリパネル",
+      "share-embed-title": "埋め込みを共有する",
+      "share-link-title": "リンク設定"
+    },
+    "menu": {
+      "new-library-panel-title": "新しいライブラリパネル",
+      "share-embed-title": "埋め込みを共有する",
+      "share-link-title": "リンクを共有する",
+      "share-snapshot-title": "スナップショットを共有する"
+    },
+    "new-library-panel": {
+      "cancel-button": "キャンセル",
+      "create-button": "ライブラリパネルの作成"
+    }
+  },
+  "share-playlist": {
+    "checkbox-description": "パネルの高さは画面サイズに合わせて調整されます",
+    "checkbox-label": "自動調整",
+    "copy-link-button": "コピー",
+    "link-url-label": "リンクURL",
+    "mode": "モード",
+    "mode-kiosk": "キオスク",
+    "mode-normal": "普通",
+    "mode-tv": "テレビ",
+    "title": "プレイリストを共有する"
+  },
+  "shared": {
+    "preferences": {
+      "theme": {
+        "dark-label": "暗い",
+        "light-label": "ライト",
+        "system-label": "システム設定"
+      }
+    }
+  },
+  "shared-dashboard": {
+    "delete-modal": {
+      "revoke-body-text": "このアクセスを取り消してもよろしいですか?",
+      "revoke-title": "アクセスを取り消す"
+    },
+    "fields": {
+      "timezone-label": "タイムゾーン"
+    }
+  },
+  "shared-dashboard-list": {
+    "button": {
+      "config-button-tooltip": "共有ダッシュボードを構成する",
+      "revoke-button-text": "アクセスを取り消す",
+      "revoke-button-tooltip": "アクセスを取り消す",
+      "view-button-tooltip": "共有ダッシュボードを表示する"
+    },
+    "empty-state": {
+      "message": "共有ダッシュボードをまだ作成していません",
+      "more-info": "既存のダッシュボードから共有ダッシュボードを作成します。 <1>共有</1> モーダル。 <4>もっと詳しく知る</4>"
+    },
+    "toggle": {
+      "pause-sharing-toggle-text": "アクセスを一時停止する"
+    }
+  },
+  "shared-preferences": {
+    "fields": {
+      "home-dashboard-label": "ホームダッシュボード",
+      "home-dashboard-placeholder": "デフォルトのダッシュボード",
+      "locale-label": "言語",
+      "locale-placeholder": "言語を選択してください",
+      "theme-label": "インターフェースのテーマ",
+      "week-start-label": "週の始まり"
+    },
+    "theme": {
+      "default-label": "デフォルト"
+    },
+    "title": "設定"
+  },
+  "sign-up": {
+    "back-button": "ログインに戻る",
+    "submit-button": "提出する",
+    "verify": {
+      "back-button": "ログインに戻る",
+      "complete-button": "サインアップを完了する",
+      "header": "メールの確認",
+      "info": "確認リンクを含む電子メールが電子メール アドレスに送信されました。",
+      "send-button": "確認メールを送信する"
+    }
+  },
+  "silences": {
+    "empty-state": {
+      "button-title": "沈黙を生み出す",
+      "title": "まだサイレンスを作成していません"
+    },
+    "table": {
+      "add-silence-button": "沈黙を追加する",
+      "edit-button": "編集",
+      "expired-silences": "期限切れの沈黙は 5 日後に自動的に削除されます。",
+      "no-matching-silences": "一致する沈黙が見つかりません。",
+      "noConfig": "新しい連絡先を作成してデフォルト値を使用して構成を作成するか、管理者に連絡して Alertmanager を設定してください。",
+      "recreate-button": "再作成",
+      "unsilence-button": "沈黙"
+    }
+  },
+  "silences-table": {
+    "header": {
+      "alert-name": "アラート名",
+      "state": "州"
+    }
+  },
+  "snapshot": {
+    "empty-state": {
+      "message": "まだスナップショットを作成していません",
+      "more-info": "任意のダッシュボードのスナップショットを作成できます。 <1>共有</1> モーダル。 <4>もっと詳しく知る</4>"
+    },
+    "external-badge": "外部の",
+    "name-column-header": "名前",
+    "share": {
+      "cancel-button": "キャンセル",
+      "copy-link-button": "リンクをコピー",
+      "delete-button": "スナップショットの削除",
+      "delete-description": "このスナップショットを削除してもよろしいですか?",
+      "delete-permission-tooltip": "スナップショットを削除する権限がありません",
+      "delete-title": "スナップショットの削除",
+      "deleted-alert": "スナップショットが削除されました。 ",
+      "expiration-label": "有効期限が切れる",
+      "info-alert": "Grafana ダッシュボード スナップショットは、クエリやパネル リンクなどの機密データを削除しながらダッシュボードをパブリックに共有し、表示されるメトリクスとシリーズ名のみを残します。",
+      "learn-more-button": "もっと詳しく知る",
+      "local-button": "スナップショットの公開",
+      "name-label": "スナップショット名",
+      "new-snapshot-button": "新しいスナップショット",
+      "success-creation": "スナップショットが作成されました",
+      "success-delete": "スナップショットは削除されました",
+      "view-all-button": "すべてのスナップショットを表示する"
+    },
+    "share-panel": {
+      "info-alert": "Grafana パネルのスナップショットは、クエリやパネル リンクなどの機密データを削除しながらパネルをパブリックに共有し、表示されるメトリクスとシリーズ名のみを残します。"
+    },
+    "url-column-header": "スナップショットの URL",
+    "view-button": "ビュー"
+  },
+  "tag-filter": {
+    "clear-button": "タグをクリアする",
+    "loading": "読み込み中...",
+    "no-tags": "タグが見つかりませんでした",
+    "placeholder": "タグでフィルタリングする"
+  },
+  "teams": {
+    "empty-state": {
+      "button-title": "新しいチーム",
+      "message": "チームが見つかりませんでした",
+      "pro-tip": "管理を容易にするために、フォルダーとダッシュボードの権限をユーザーではなくチームに割り当てます。 <2>もっと詳しく知る</2>",
+      "title": "まだチームを作成していません"
+    }
+  },
+  "time-picker": {
+    "absolute": {
+      "recent-title": "最近使用した絶対範囲",
+      "title": "絶対時間範囲"
+    },
+    "calendar": {
+      "apply-button": "時間範囲を適用する",
+      "cancel-button": "キャンセル",
+      "close": "カレンダーを閉じる",
+      "next-month": "来月",
+      "previous-month": "前月",
+      "select-time": "時間範囲を選択してください"
+    },
+    "content": {
+      "empty-recent-list-docs": "<0><0>ドキュメントを読む</0><1> カスタム時間範囲を入力する方法について詳しくは、こちらをご覧ください。</1></0>",
+      "empty-recent-list-info": "この時間ピッカーをこれまで使用したことがないようです。",
+      "filter-placeholder": "クイックレンジを検索する"
+    },
+    "copy-paste": {
+      "copy-success-message": "クリップボードにコピーされた時間範囲",
+      "default-error-message": "{{error}} は有効な時間範囲ではありません",
+      "default-error-title": "無効な時間範囲です",
+      "tooltip-copy": "時間範囲をクリップボードにコピー",
+      "tooltip-paste": "貼り付け時間範囲"
+    },
+    "footer": {
+      "change-settings-button": "時間設定を変更する",
+      "fiscal-year-option": "会計年度",
+      "fiscal-year-start": "会計年度開始月",
+      "time-zone-option": "タイムゾーン",
+      "time-zone-selection": "タイムゾーンの選択"
+    },
+    "range-content": {
+      "apply-button": "時間範囲を適用する",
+      "default-error": "過去の日付または「現在」を入力してください",
+      "fiscal-year": "会計年度",
+      "from-input": "から",
+      "open-input-calendar": "カレンダーを開く",
+      "range-error": "「From」を「To」の後に置くことはできません",
+      "to-input": "に"
+    },
+    "range-picker": {
+      "backwards-time-aria-label": "時間範囲を後方に移動する",
+      "current-time-selected": "選択された時間範囲: {{currentTimeRange}}",
+      "forwards-time-aria-label": "時間範囲を前方に移動する",
+      "to": "に",
+      "zoom-out-button": "時間範囲をズームアウトする",
+      "zoom-out-tooltip": "時間範囲をズームアウトする <1></1> CTRL+Z"
+    },
+    "time-range": {
+      "apply": "時間範囲を適用する",
+      "aria-role": "時間範囲の選択",
+      "default-title": "時間範囲",
+      "example": "例: 10 分前から現在までの時間範囲を選択する場合",
+      "example-details": "出発地: 現在 -10m 到着地: 現在",
+      "example-title": "時間範囲の例",
+      "from-to": "{{timeOptionFrom}} に {{timeOptionTo}}",
+      "more-info": "詳細については、を参照してください。 <2>ドキュメント <1></1></2>。",
+      "specify": "時間範囲を指定する <1></1>",
+      "supported-formats": "サポートされている形式: <1>今 - [数字]s/m/h/d/w</1>"
+    },
+    "zone": {
+      "select-aria-label": "タイムゾーンピッカー",
+      "select-search-input": "検索する文字列（国、都市、略称）"
+    }
+  },
+  "trails": {
+    "bookmarks": {
+      "or-view-bookmarks": "またはブックマークを表示する"
+    },
+    "card": {
+      "data-source": "データソース: ",
+      "date-created": "作成日: ",
+      "metric": "メトリック："
+    },
+    "home": {
+      "learn-more": "もっと詳しく知る",
+      "lets-start": "始めましょう！",
+      "start-your-metrics-exploration": "メトリクスの探索を始めましょう!",
+      "subtitle": "クエリを作成せずに、Prometheus 互換のメトリクスを探索します。"
+    },
+    "metric-overview": {
+      "description-label": "説明",
+      "labels": "ラベル",
+      "metric-attributes": "属性",
+      "no-description": "説明がありません",
+      "type-label": "タイプ",
+      "unit-label": "ユニット",
+      "unknown-type": "未知"
+    },
+    "metric-select": {
+      "filter-by": "フィルター条件",
+      "otel-switch": "このスイッチにより、OTel ネイティブ データ ソースの OTel リソースによるフィルタリングが有効になります。"
+    },
+    "recent-metrics": {
+      "or-view-a-recent-exploration": "または、最近の探索を表示します"
+    },
+    "settings": {
+      "always-keep-selected-metric-graph-in-view": "選択したメトリック グラフを常にビュー内に保持します",
+      "show-previews-of-metric-graphs": "メトリックグラフのプレビューを表示する"
+    }
+  },
+  "transformations": {
+    "empty": {
+      "add-transformation-body": "変換を使用すると、ビジュアライゼーションを表示する前に、データをさまざまな方法で変更できます。<1></1>これには、データの結合、フィールド名の変更、計算の実行、表示用のデータの書式設定などが含まれます。",
+      "add-transformation-header": "データの変換を開始する"
+    }
+  },
+  "upgrade-box": {
+    "discovery-text": "Pro の機能を発見しました!",
+    "discovery-text-continued": "Grafana Pro プランを取得してアクセスします {{featureName}}。",
+    "get-started": "始めましょう {{featureName}}",
+    "learn-more": "もっと詳しく知る",
+    "upgrade-button": "アップグレード"
+  },
+  "user-orgs": {
+    "current-org-button": "現在",
+    "name-column": "名前",
+    "role-column": "役割",
+    "select-org-button": "組織の選択",
+    "title": "組織"
+  },
+  "user-profile": {
+    "fields": {
+      "email-error": "メールアドレスは必須です",
+      "email-label": "電子メール",
+      "name-error": "名前は必須です",
+      "name-label": "名前",
+      "username-label": "ユーザー名"
+    },
+    "tabs": {
+      "general": "一般的な"
+    }
+  },
+  "user-session": {
+    "auth-module-column": "アイデンティティプロバイダー",
+    "browser-column": "ブラウザとOS",
+    "created-at-column": "ログオンしました",
+    "identity-provider-column": "アイデンティティプロバイダー",
+    "ip-column": "IPアドレス",
+    "revoke": "ユーザーセッションを取り消します",
+    "seen-at-column": "最後に見た"
+  },
+  "user-sessions": {
+    "loading": "セッションを読み込んでいます..."
+  },
+  "users": {
+    "empty-state": {
+      "message": "ユーザーが見つかりませんでした"
+    }
+  },
+  "users-access-list": {
+    "tabs": {
+      "public-dashboard-users-tab-title": "パブリックダッシュボードユーザー",
+      "shared-dashboard-users-tab-title": "共有ダッシュボード ユーザー"
+    }
+  },
+  "variable": {
+    "adhoc": {
+      "placeholder": "値を選択してください"
+    },
+    "dropdown": {
+      "placeholder": "変数値を入力してください"
+    },
+    "picker": {
+      "link-all": "全て",
+      "option-all": "全て",
+      "option-selected-values": "選択済み",
+      "option-tooltip": "選択をクリア"
+    },
+    "textbox": {
+      "placeholder": "変数値を入力してください"
+    }
+  },
+  "variables": {
+    "empty-state": {
+      "button-title": "変数の追加",
+      "info-box-content": "変数を使用すると、よりインタラクティブで動的なダッシュボードが可能になります。",
+      "info-box-content-2": "をチェックしてください <2>テンプレートと変数のドキュメント</2> 詳細については。",
+      "title": "まだ変数は追加されていません"
+    }
+  }
+}
