@@ -24,7 +24,7 @@ COPY conf/defaults.ini ./conf/defaults.ini
 
 RUN apk add --no-cache make build-base python3
 
-RUN yarn install --immutable
+RUN yarn install
 
 COPY tsconfig.json eslint.config.js .editorconfig .browserslistrc .prettierrc.js ./
 COPY scripts scripts
@@ -66,7 +66,8 @@ COPY pkg/storage/unified/resource/go.* pkg/storage/unified/resource/
 COPY pkg/storage/unified/apistore/go.* pkg/storage/unified/apistore/
 COPY pkg/semconv/go.* pkg/semconv/
 COPY pkg/aggregator/go.* pkg/aggregator/
-COPY apps/playlist/go.* apps/playlist/
+COPY apps/playlist apps/playlist
+COPY kindsv2 kindsv2
 
 RUN go mod download
 RUN if [[ "$BINGO" = "true" ]]; then \
@@ -77,7 +78,6 @@ RUN if [[ "$BINGO" = "true" ]]; then \
 COPY embed.go Makefile build.go package.json ./
 COPY cue.mod cue.mod
 COPY kinds kinds
-COPY kindsv2 kindsv2
 COPY local local
 COPY packages/grafana-schema packages/grafana-schema
 COPY public/app/plugins public/app/plugins
