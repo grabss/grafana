@@ -2183,7 +2183,7 @@
       "title": "可観測性"
     },
     "new": {
-      "title": "新しい"
+      "title": "新規作成"
     },
     "new-dashboard": {
       "title": "新しいダッシュボード"
@@ -2850,7 +2850,7 @@
     },
     "dashboard-actions": {
       "import": "インポート",
-      "new": "新しい",
+      "new": "新規作成",
       "new-dashboard": "新しいダッシュボード",
       "new-folder": "新しいフォルダー"
     },
