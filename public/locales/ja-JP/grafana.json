@@ -2416,7 +2416,7 @@
       "tooltip": "プレイリストを共有する"
     },
     "create-button": {
-      "title": "新しいプレイリスト"
+      "title": "新規作成"
     },
     "delete-modal": {
       "body": "削除してもよろしいですか {{name}} プレイリスト？",
