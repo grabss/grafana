@@ -243,7 +243,7 @@
       "cancel": "キャンセル",
       "delete": "消去",
       "edit": "編集",
-      "export": "輸出",
+      "export": "エクスポート",
       "export-all": "すべてエクスポート",
       "loading": "読み込み中...",
       "view": "ビュー"
@@ -977,7 +977,7 @@
       "panels-preload-description": "有効にすると、ダッシュボードがロードされるとすぐにすべてのパネルのロードが開始されます。",
       "panels-preload-label": "プリロードパネル",
       "tags-label": "タグ",
-      "title": "一般的な",
+      "title": "一般",
       "title-label": "タイトル"
     },
     "json-editor": {
@@ -1298,8 +1298,8 @@
       "title": "ダッシュボードの JSON をエクスポートする"
     },
     "menu": {
-      "export-as-json-label": "輸出",
-      "export-as-json-tooltip": "輸出"
+      "export-as-json-label": "エクスポート",
+      "export-as-json-tooltip": "エクスポート"
     }
   },
   "folder-filter": {
@@ -1313,7 +1313,7 @@
     "back-button": "ログインに戻る",
     "change-password": {
       "skip-button": "スキップ",
-      "submit-button": "提出する"
+      "submit-button": "送信"
     },
     "contact-admin": "ユーザー名またはメールアドレスを忘れましたか? ",
     "email-sent": "リセットリンクを含むメールがメールアドレスに送信されました。",
@@ -2064,7 +2064,7 @@
     },
     "config-general": {
       "subtitle": "Grafana 全体のデフォルトの設定と設定を管理する",
-      "title": "一般的な"
+      "title": "一般"
     },
     "config-plugins": {
       "subtitle": "プラグインをインストールし、データ間の関係を定義する",
@@ -2183,13 +2183,13 @@
       "title": "可観測性"
     },
     "new": {
-      "title": "新しい"
+      "title": "新規作成"
     },
     "new-dashboard": {
-      "title": "新しいダッシュボード"
+      "title": "ダッシュボード"
     },
     "new-folder": {
-      "title": "新しいフォルダー"
+      "title": "フォルダー"
     },
     "observability": {
       "title": "可観測性"
@@ -2349,7 +2349,7 @@
       "server-discovery-action-button": "OpenID Connect ディスカバリー URL を入力してください",
       "server-discovery-modal-close": "近い",
       "server-discovery-modal-loading": "読み込み中...",
-      "server-discovery-modal-submit": "提出する"
+      "server-discovery-modal-submit": "送信"
     },
     "login": {
       "error": "ログインプロバイダーがログイン要求を拒否しました"
@@ -2416,7 +2416,7 @@
       "tooltip": "プレイリストを共有する"
     },
     "create-button": {
-      "title": "新しいプレイリスト"
+      "title": "新規作成"
     },
     "delete-modal": {
       "body": "削除してもよろしいですか {{name}} プレイリスト？",
@@ -2849,10 +2849,10 @@
       "view-as-list": "リストとして表示"
     },
     "dashboard-actions": {
-      "import": "輸入",
-      "new": "新しい",
-      "new-dashboard": "新しいダッシュボード",
-      "new-folder": "新しいフォルダー"
+      "import": "インポート",
+      "new": "新規作成",
+      "new-dashboard": "ダッシュボード",
+      "new-folder": "フォルダー"
     },
     "results-table": {
       "datasource-header": "データソース",
@@ -2974,7 +2974,7 @@
     },
     "tab-title": {
       "embed": "埋め込む",
-      "export": "輸出",
+      "export": "エクスポート",
       "library-panel": "ライブラリパネル",
       "link": "リンク",
       "panel-embed": "埋め込む",
@@ -3069,7 +3069,7 @@
   },
   "sign-up": {
     "back-button": "ログインに戻る",
-    "submit-button": "提出する",
+    "submit-button": "送信",
     "verify": {
       "back-button": "ログインに戻る",
       "complete-button": "サインアップを完了する",
@@ -3273,7 +3273,7 @@
       "username-label": "ユーザー名"
     },
     "tabs": {
-      "general": "一般的な"
+      "general": "一般"
     }
   },
   "user-session": {
