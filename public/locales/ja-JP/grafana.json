@@ -977,7 +977,7 @@
       "panels-preload-description": "有効にすると、ダッシュボードがロードされるとすぐにすべてのパネルのロードが開始されます。",
       "panels-preload-label": "プリロードパネル",
       "tags-label": "タグ",
-      "title": "一般的な",
+      "title": "一般",
       "title-label": "タイトル"
     },
     "json-editor": {
@@ -2064,7 +2064,7 @@
     },
     "config-general": {
       "subtitle": "Grafana 全体のデフォルトの設定と設定を管理する",
-      "title": "一般的な"
+      "title": "一般"
     },
     "config-plugins": {
       "subtitle": "プラグインをインストールし、データ間の関係を定義する",
@@ -3273,7 +3273,7 @@
       "username-label": "ユーザー名"
     },
     "tabs": {
-      "general": "一般的な"
+      "general": "一般"
     }
   },
   "user-session": {
