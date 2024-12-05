@@ -1,5 +1,3 @@
-# syntax=docker/dockerfile:1
-
 ARG BASE_IMAGE=alpine:3.20
 ARG JS_IMAGE=node:20-alpine
 ARG JS_PLATFORM=linux/amd64
