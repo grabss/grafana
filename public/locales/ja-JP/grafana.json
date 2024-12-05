@@ -2851,8 +2851,8 @@
     "dashboard-actions": {
       "import": "インポート",
       "new": "新規作成",
-      "new-dashboard": "新しいダッシュボード",
-      "new-folder": "新しいフォルダー"
+      "new-dashboard": "ダッシュボード",
+      "new-folder": "フォルダー"
     },
     "results-table": {
       "datasource-header": "データソース",
